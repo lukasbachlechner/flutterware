@@ -12,13 +12,12 @@ jobs:
         with:
           channel: stable
           cache: true
-          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:' # optional, change this to force refresh cache
-          cache-path: ${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch: # optional, change this to specify the cache path
-
+          cache-key: "flutter-:os:-:channel:-:version:-:arch:-:hash:" # optional, change this to force refresh cache
+          cache-path: ${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch # optional, change this to specify the cache path
 
       - name: Install flutter dependencies
         run: flutter --version && flutter pub get
-      
+
       - name: Build Widgetbook file
         run: flutter pub run build_runner build --delete-conflicting-outputs
 
@@ -31,5 +30,5 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_TO_PROD: true
-          NETLIFY_DEPLOY_MESSAGE: 'Deploy from GitHub Actions'
-          build_directory: 'build/web'
+          NETLIFY_DEPLOY_MESSAGE: "Deploy from GitHub Actions"
+          build_directory: "build/web"

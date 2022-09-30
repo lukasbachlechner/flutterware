@@ -1,16 +1,26 @@
-# flutterware
+# Flutterware – WIP! Don't use in production.
+--- 
+[![widgetbook build](https://github.com/lukasbachlechner/flutterware/actions/workflows/github-actions.yml/badge.svg)](https://github.com/lukasbachlechner/flutterware/actions/workflows/github-actions.yml)
 
-A new Flutter project.
+A Flutter boilerplate app for Shopware 6 shops.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Contributing
+### Code quality
+To keep some load off of the pipeline, please always run 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `flutter format .`
+- `flutter analyze`
+- `flutter test`
+
+before you create a PR. To make this easier, there's a ready made pre-commit hook that does exactly that. To enable it, run 
+
+```bash
+chmod +x scripts/*.sh && ./scripts/install-hooks.sh
+```
+
+(Source: [https://medium.com/@kevin.gamboa/how-to-configure-a-pre-commit-for-a-flutter-application-29dfbb853366](https://medium.com/@kevin.gamboa/how-to-configure-a-pre-commit-for-a-flutter-application-29dfbb853366))
+

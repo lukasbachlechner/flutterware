@@ -1,10 +1,13 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 import 'package:flutterware/src/common_widgets/button/button.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
-import 'package:widgetbook/widgetbook.dart' as wb;
+import 'package:widgetbook_annotation/widgetbook_annotation.dart'
+    as annotations;
+import 'package:widgetbook/widgetbook.dart';
 
-@WidgetbookUseCase(name: 'Button types', type: Button)
+@annotations.WidgetbookUseCase(name: 'Button types', type: Button)
 Widget buttonTypesUseCase(BuildContext context) {
   return Center(
     child: Column(
@@ -43,7 +46,7 @@ Widget buttonTypesUseCase(BuildContext context) {
   );
 }
 
-@WidgetbookUseCase(name: 'Button sizes', type: Button)
+@annotations.WidgetbookUseCase(name: 'Button sizes', type: Button)
 Widget buttonSizesUseCase(BuildContext context) {
   return Center(
     child: Column(
@@ -71,17 +74,17 @@ Widget buttonSizesUseCase(BuildContext context) {
   );
 }
 
-@WidgetbookUseCase(name: 'Button playground', type: Button)
+@annotations.WidgetbookUseCase(name: 'Button playground', type: Button)
 Widget buttonPlaygroundUseCase(BuildContext context) {
   final label =
       context.knobs.text(label: 'Button label', initialValue: 'Learn more');
   final buttonSize = context.knobs.options(label: 'Button size', options: [
     for (var size in ButtonSize.values)
-      wb.Option(label: size.toString(), value: size),
+      Option(label: size.toString(), value: size),
   ]);
   final buttonType = context.knobs.options(label: 'Button type', options: [
     for (var type in ButtonType.values)
-      wb.Option(label: type.toString(), value: type),
+      Option(label: type.toString(), value: type),
   ]);
   final disabled =
       context.knobs.boolean(label: 'Is disabled?', initialValue: false);

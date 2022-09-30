@@ -25,6 +25,6 @@ void main() async {
       );
     };
   }, (error, stack) {
-    print(error.toString());
+    debugPrint(error.toString());
   });
 }

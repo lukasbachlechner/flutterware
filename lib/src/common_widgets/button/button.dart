@@ -58,14 +58,14 @@ class Button extends StatelessWidget {
     }
   }
 
-  Size getButtonSize() {
+  Size? getButtonSize() {
     switch (buttonSize) {
       case ButtonSize.medium:
         return const Size.fromWidth(280);
       case ButtonSize.large:
         return const Size.fromWidth(343);
       default:
-        return Size.zero;
+        return null;
     }
   }
 
@@ -171,9 +171,7 @@ class Button extends StatelessWidget {
               : BorderSide.none,
         ),
       ), */
-      fixedSize: buttonSize != ButtonSize.small
-          ? MaterialStatePropertyAll(getButtonSize())
-          : null,
+      fixedSize: MaterialStatePropertyAll(getButtonSize()),
     );
   }
 

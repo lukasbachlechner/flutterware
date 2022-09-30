@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutterware/src/common_widgets/heading/heading.dart';
 
-import '../../utils/test_wrapper.dart';
+import '../../../utils/test_wrapper.dart';
 
 void main() {
   testWidgets('Heading renders correct data', (tester) async {

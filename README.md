@@ -1,6 +1,6 @@
 # Flutterware – WIP! Don't use in production.
 --- 
-[![widgetbook build](https://github.com/lukasbachlechner/flutterware/actions/workflows/github-actions.yml/badge.svg)](https://github.com/lukasbachlechner/flutterware/actions/workflows/github-actions.yml)
+[![widgetbook build](https://github.com/lukasbachlechner/flutterware/actions/workflows/deploy-widgetbook.yml/badge.svg?branch=main)](https://github.com/lukasbachlechner/flutterware/actions/workflows/deploy-widgetbook.yml)
 
 A Flutter boilerplate app for Shopware 6 shops.
 

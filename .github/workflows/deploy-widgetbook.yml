@@ -10,7 +10,6 @@ on:
       - closed
 jobs:
   build:
-    if: github.events.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

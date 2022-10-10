@@ -18,6 +18,15 @@ pop_stash_files () {
     fi
 }
 
+
+
+# Stash unstaged files
+hasChanges=$(git diff)
+if [ -n "$hasChanges" ]; then
+    printf "\e[33;1m%s\e[0m\n" 'Stashing unstaged changes'
+    git stash push --keep-index
+fi
+
 # Flutter Analyzer
 printf "\e[33;1m%s\e[0m\n" '=== Running Flutter analyzer ==='
 flutter analyze
@@ -27,13 +36,6 @@ if [ $? -ne 0 ]; then
 fi
 printf "\e[33;1m%s\e[0m\n" 'Finished running Flutter analyzer'
 printf '%s\n' "${avar}"
-
-# Stash unstaged files
-hasChanges=$(git diff)
-if [ -n "$hasChanges" ]; then
-    printf "\e[33;1m%s\e[0m\n" 'Stashing unstaged changes'
-    git stash push --keep-index
-fi
 
 # Flutter formatter
 printf "\e[33;1m%s\e[0m\n" '=== Running Flutter Formatter ==='

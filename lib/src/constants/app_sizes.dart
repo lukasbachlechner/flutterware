@@ -11,6 +11,18 @@ class AppSizes {
   static const p40 = 40.0;
   static const p80 = 80.0;
   static const p160 = 160.0;
+
+  static const iconBaseSize = 16.0;
+
+  static const iconXXS = iconBaseSize;
+  static const iconXS = iconBaseSize * 1.4;
+  static const iconSM = iconBaseSize * 1.625;
+  static const iconMD = iconBaseSize * 1.8;
+  static const iconLG = iconBaseSize * 2;
+  static const iconXL = iconBaseSize * 2.2;
+  static const iconXXL = iconBaseSize * 2.5;
+  static const iconXL3 = iconBaseSize * 2.8;
+  static const iconXL4 = iconBaseSize * 3.25;
 }
 
 /// Constant gap widths

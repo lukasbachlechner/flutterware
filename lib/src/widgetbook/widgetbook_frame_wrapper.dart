@@ -22,7 +22,7 @@ class WidgetbookFrameWrapper extends StatelessWidget {
         backgroundColor: AppColors.primaryBlue,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: AppSizes.p20),
+        padding: const EdgeInsets.symmetric(horizontal: AppSizes.p16),
         child: child,
       ),
     );

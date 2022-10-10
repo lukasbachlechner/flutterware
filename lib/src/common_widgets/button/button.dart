@@ -162,15 +162,6 @@ class Button extends StatelessWidget {
               : BorderSide.none,
         );
       }),
-      /* shape: MaterialStatePropertyAll(
-        RoundedRectangleBorder(
-          side: buttonType == ButtonType.outlined
-              ? const BorderSide(
-                  color: AppColors.primaryColor,
-                )
-              : BorderSide.none,
-        ),
-      ), */
       fixedSize: MaterialStatePropertyAll(getButtonSize()),
     );
   }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutterware/src/common_widgets/heading/heading.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
+import 'package:flutterware/src/constants/flutterware_icons.dart';
 import 'package:flutterware/src/widgetbook/widgetbook_frame_wrapper.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 
@@ -92,6 +94,46 @@ Widget colorConstantsUseCase(BuildContext context) {
           right: AppColors.secondaryRed,
         ),
       ],
+    ),
+  );
+}
+
+@WidgetbookUseCase(name: 'Icons', type: FlutterwareIcons)
+Widget iconsUseCase(BuildContext context) {
+  final List<Widget> iconWidgets = [];
+  FlutterwareIcons.getAll().forEach(
+    (key, icon) => iconWidgets.add(
+      Card(
+        child: InkWell(
+          onTap: () async {
+            await Clipboard.setData(
+              ClipboardData(text: 'FlutterwareIcons.$key'),
+            );
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(AppSizes.p16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  icon,
+                  size: 24,
+                ),
+                gapH4,
+                Text(key),
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+
+  return WidgetbookFrameWrapper(
+    title: 'Icons',
+    child: GridView.count(
+      crossAxisCount: 3,
+      children: iconWidgets,
     ),
   );
 }

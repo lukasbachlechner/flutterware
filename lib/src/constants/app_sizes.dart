@@ -23,6 +23,8 @@ class AppSizes {
   static const iconXXL = iconBaseSize * 2.5;
   static const iconXL3 = iconBaseSize * 2.8;
   static const iconXL4 = iconBaseSize * 3.25;
+
+  static const fabSize = 66.0;
 }
 
 /// Constant gap widths

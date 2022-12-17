@@ -6,7 +6,6 @@ import 'package:flutterware/src/app.dart';
 void main() async {
   await runZonedGuarded(() async {
     runApp(const FlutterwareApp());
-
     FlutterError.onError = (FlutterErrorDetails details) {
       FlutterError.presentError(details);
     };

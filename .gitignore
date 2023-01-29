@@ -45,5 +45,6 @@ app.*.map.json
 
 # Custom 
 /lib/widgetbook.widgetbook.dart
+/lib/**/*.g.dart
 
 /scripts/test.sh

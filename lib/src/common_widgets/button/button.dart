@@ -12,7 +12,7 @@ enum ButtonType {
   text,
 }
 
-enum ButtonSize { small, medium, large }
+enum ButtonSize { small, medium, large, fullWidth }
 
 class Button extends StatelessWidget {
   const Button({
@@ -64,6 +64,8 @@ class Button extends StatelessWidget {
         return const Size.fromWidth(280);
       case ButtonSize.large:
         return const Size.fromWidth(343);
+      case ButtonSize.fullWidth:
+        return const Size.fromWidth(double.maxFinite);
       default:
         return null;
     }
@@ -168,7 +170,7 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDisabled = disabled || onPressed == null;
+    final isDisabled = onPressed == null || disabled;
     if (buttonType == ButtonType.text) {
       return TextButton(
         onPressed: isDisabled ? null : onPressed,

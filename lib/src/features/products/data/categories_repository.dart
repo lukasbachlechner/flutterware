@@ -27,6 +27,13 @@ class CategoriesRepository {
       requestRootId,
     );
   }
+
+  Future<Response<List<Category>>> getMainNavigation() {
+    return client.categories.getNavigationMenu(
+      const NavigationId.mainNavigation(),
+      const NavigationId.mainNavigation(),
+    );
+  }
 }
 
 @Riverpod(keepAlive: true)

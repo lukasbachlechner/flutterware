@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutterware/src/common_widgets/image/image.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
 import 'package:shopware6_client/shopware6_client.dart';
@@ -15,12 +16,12 @@ class ProductImages extends HookWidget {
   Widget build(BuildContext context) {
     final activeIndex = useState(0);
 
-    if (media == null || media!.length == 1) {
+    if (media == null || media!.length <= 1) {
       return AspectRatio(
         aspectRatio: 375 / 600,
         child: Container(
             color: AppColors.white,
-            child: Image.network(cover?.media.url ?? '')),
+            child: FwImage(src: cover?.media.url ?? '')),
       );
     } else {
       final imageSrcList = media!.map(
@@ -32,8 +33,8 @@ class ProductImages extends HookWidget {
       );
       final imageWidgetList = imageSrcList
           .map(
-            (url) => Image.network(
-              url ?? '',
+            (url) => FwImage(
+              src: url ?? '',
               fit: BoxFit.contain,
               width: 1000,
             ),

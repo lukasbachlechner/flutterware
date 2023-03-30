@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
 import 'package:flutterware/src/constants/flutterware_icons.dart';
-import 'package:flutterware/src/features/authentication/presentation/account_screen.dart';
+import 'package:flutterware/src/features/authentication/presentation/screens/account_screen.dart';
 import 'package:flutterware/src/features/cart/data/cart_button_provider.dart';
 import 'package:flutterware/src/features/home/presentation/home_screen.dart';
 import 'package:flutterware/src/features/menu/presentation/screens/menu_screen.dart';

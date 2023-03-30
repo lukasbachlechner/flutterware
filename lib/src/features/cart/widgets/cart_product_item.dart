@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterware/src/common_widgets/image/image.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
 import 'package:flutterware/src/features/cart/data/cart_repository.dart';
@@ -20,10 +21,12 @@ class CartProductItem extends ConsumerWidget {
       padding: const EdgeInsets.only(bottom: AppSizes.p8),
       child: Row(
         children: [
-          Text(
-            '${lineItemProductOption.group}: ',
-            style: sharedStyle,
-          ),
+          if (lineItemProductOption.group != null &&
+              lineItemProductOption.group!.length <= 15)
+            Text(
+              '${lineItemProductOption.group}: ',
+              style: sharedStyle,
+            ),
           Text(
             lineItemProductOption.option ?? '',
             style: sharedStyle.copyWith(fontWeight: FontWeight.bold),
@@ -56,8 +59,8 @@ class CartProductItem extends ConsumerWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              lineItem.cover?.url ?? '',
+            FwImage(
+              src: lineItem.cover?.url ?? '',
               width: 140,
             ),
             gapW16,

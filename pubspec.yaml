@@ -37,11 +37,12 @@ dependencies:
   hooks_riverpod: ^2.0.2
   flutter_hooks: ^0.18.5+1
   go_router:
-    git:
-      url: git@github.com:angjelkom/packages.git
-      ref: shell-route-observers
-      path: packages/go_router
-  riverpod_annotation: ^1.0.6
+    ^6.0.10
+    # git:
+    #   url: git@github.com:angjelkom/packages.git
+    #   ref: shell-route-observers
+    #   path: packages/go_router
+  riverpod_annotation: ^2.0.0
   shopware6_client:
     path: ../shopware6_client
   equatable: ^2.0.5
@@ -49,6 +50,11 @@ dependencies:
   flutter_html: ^2.2.1
   snapping_sheet: ^3.1.0
   carousel_slider: ^4.2.1
+  infinite_scroll_pagination: ^3.2.0
+  riverpod_infinite_scroll: ^1.0.9
+  flutter_keyboard_visibility: ^5.4.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -62,7 +68,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   # widgetbook_generator: ^2.4.1
   build_runner: ^2.2.1
-  riverpod_generator: ^1.0.6
+  riverpod_generator: ^2.0.0
   # widgetbook: ^2.4.1
 
 # For information on the generic Dart part of this file, see the

@@ -1,56 +1,41 @@
-import 'package:flutterware/src/constants/app_config.dart';
+import 'package:flutterware/src/features/global/data/context_repository.dart';
 import 'package:flutterware/src/features/products/data/categories_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shopware6_client/shopware6_client.dart';
+
+import '../../menu/data/categories_service.dart';
+import 'local_storage_repository.dart';
 
 part 'global_data_notifier.g.dart';
 
 class GlobalData {
   final List<Category> categories;
+  final CurrentContext currentContext;
 
-  const GlobalData({required this.categories});
-
-  /// This is ugly, I know :D
-  static List<Category> sortCategories(List<Category> unsorted) {
-    final sorted = <Category>[];
-
-    if (unsorted.isEmpty) {
-      return unsorted;
-    }
-
-    final first = unsorted.firstWhere(
-      (element) => element.afterCategoryId == null,
-    );
-
-    sorted.add(first);
-
-    for (var i = 0; i < unsorted.length - 1; i++) {
-      sorted.add(unsorted.firstWhere(
-        (element) => element.afterCategoryId == sorted[i].id,
-      ));
-    }
-
-    return sorted;
-  }
+  const GlobalData({
+    required this.categories,
+    required this.currentContext,
+  });
 
   List<Category> get rootCategories {
-    final rootCategories = categories
-        .where(
-          (category) => category.parentId == AppConfig.navigationEntryPointId,
-        )
-        .toList();
-
-    return sortCategories(rootCategories);
+    return CategoriesService.getRootCategories(
+      categories: categories,
+      navigationCategoryId: currentContext.salesChannel.navigationCategoryId,
+    );
   }
 
   List<Category> getChildCategories(ID parentId) {
-    final children = categories
-        .where(
-          (category) => category.parentId == parentId,
-        )
-        .toList();
+    return CategoriesService.getChildCategories(
+      categories: categories,
+      parentId: parentId,
+    );
+  }
 
-    return sortCategories(children);
+  Category? getCategoryById(ID categoryId) {
+    return CategoriesService.getCategoryById(
+      categories: categories,
+      categoryId: categoryId,
+    );
   }
 }
 
@@ -58,15 +43,30 @@ class GlobalData {
 class GlobalDataNotifier extends _$GlobalDataNotifier {
   @override
   FutureOr<GlobalData> build() async {
-    final futures = await Future.wait([
-      ref.watch(categoriesRepositoryProvider).getNavigationMenu(
-            const NavigationId.mainNavigation(),
-            const NavigationId.mainNavigation(),
-          ),
-    ]);
+    late final List<Category> categories;
+    late final CurrentContext currentContext;
 
-    final categoriesResponse = futures[0];
+    await Future.wait({
+      ref
+          .watch(contextRepositoryProvider)
+          .fetchCurrentContext()
+          .then((response) => currentContext = response.body!),
+      ref
+          .watch(categoriesRepositoryProvider)
+          .getMainNavigation()
+          .then((response) => categories = response.body!),
+    });
 
-    return GlobalData(categories: categoriesResponse.body!);
+    ref
+        .read(localStorageRepositoryProvider)
+        .saveContextToken(currentContext.token);
+
+    /*  final categoriesResponse = futures[0] as Response<List<Category>>;
+    final contextResponse = futures[1] as Response<CurrentContext>; */
+
+    return GlobalData(
+      categories: categories,
+      currentContext: currentContext,
+    );
   }
 }

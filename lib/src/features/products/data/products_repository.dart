@@ -15,11 +15,16 @@ class ProductsRepository {
     return client.products.getAll(input);
   }
 
+  Future<Response<ProductCriteriaResponse>> byCategoryId(
+      ID categoryId, ProductListingCriteriaInput input) {
+    return client.products.byCategoryId(categoryId, input);
+  }
+
   Future<Response<ProductDetailResponse>> get(ID id) {
     return client.products.get(
       id,
-      CriteriaInput(
-        associations: const {
+      const CriteriaInput(
+        associations: {
           'media': {},
         },
       ),

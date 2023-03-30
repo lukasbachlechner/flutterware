@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterware/src/features/search/presentation/widgets/search_bar.dart';
 
 class MenuShell extends StatelessWidget {
   final Widget child;
@@ -6,13 +7,15 @@ class MenuShell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        children: [
-          const Text('search bar here'),
-          Expanded(child: child),
-        ],
-      ),
+    return Column(
+      children: [
+        const SearchBar(),
+        MediaQuery.removePadding(
+          context: context,
+          removeTop: true,
+          child: Expanded(child: child),
+        ),
+      ],
     );
   }
 }

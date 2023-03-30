@@ -27,7 +27,7 @@ class CartScreen extends ConsumerWidget {
                   return const EmptyCart();
                 }
                 return CartDetails(
-                  cart: cart,
+                  cart: cart.cart,
                 );
               },
               value: cartValue,

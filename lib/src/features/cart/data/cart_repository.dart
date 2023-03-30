@@ -32,16 +32,39 @@ CartRepository cartRepository(CartRepositoryRef ref) {
   return CartRepository(client);
 }
 
+class CartState {
+  final Cart cart;
+  const CartState(this.cart);
+
+  List<LineItem> get products {
+    return cart.lineItems
+            ?.where((item) => item.type == LineItemType.product)
+            .toList() ??
+        [];
+  }
+
+  int get productCount {
+    return products.fold(
+      0,
+      (previousValue, item) => previousValue + (item.quantity ?? 0),
+    );
+  }
+
+  bool get isEmpty {
+    return productCount == 0;
+  }
+}
+
 @Riverpod(keepAlive: true)
 class CartNotifier extends _$CartNotifier {
   @override
-  FutureOr<Cart> build() async {
+  FutureOr<CartState> build() async {
     final cartResponse =
         await ref.watch(cartRepositoryProvider).getOrCreateCart();
     if (cartResponse.body != null) {
-      return cartResponse.body!;
+      return CartState(cartResponse.body!);
     } else {
-      return Cart();
+      return CartState(Cart());
     }
   }
 
@@ -51,7 +74,7 @@ class CartNotifier extends _$CartNotifier {
       final newCartResponse =
           await ref.read(cartRepositoryProvider).addItems(items);
       if (newCartResponse.body != null) {
-        state = AsyncData(newCartResponse.body!);
+        state = AsyncData(CartState(newCartResponse.body!));
       }
     } catch (e, st) {
       state = AsyncError(e, st);
@@ -64,7 +87,7 @@ class CartNotifier extends _$CartNotifier {
       final newCartResponse =
           await ref.read(cartRepositoryProvider).updateItems(items);
       if (newCartResponse.body != null) {
-        state = AsyncData(newCartResponse.body!);
+        state = AsyncData(CartState(newCartResponse.body!));
       }
     } catch (e, st) {
       state = AsyncError(e, st);
@@ -77,7 +100,7 @@ class CartNotifier extends _$CartNotifier {
       final newCartResponse =
           await ref.read(cartRepositoryProvider).removeItems(ids);
       if (newCartResponse.body != null) {
-        state = AsyncData(newCartResponse.body!);
+        state = AsyncData(CartState(newCartResponse.body!));
       }
     } catch (e, st) {
       state = AsyncError(e, st);
@@ -85,23 +108,26 @@ class CartNotifier extends _$CartNotifier {
   }
 
   List<LineItem> get products {
-    if (state.value != null) {
-      return state.value!.lineItems
-              ?.where((item) => item.type == LineItemType.product)
-              .toList() ??
-          [];
+    if (state.hasValue) {
+      return state.value!.products;
     }
+
     return [];
   }
 
   int get productCount {
-    return products.fold(
-      0,
-      (previousValue, item) => previousValue + (item.quantity ?? 0),
-    );
+    if (state.hasValue) {
+      return state.value!.productCount;
+    }
+
+    return 0;
   }
 
   bool get isEmpty {
-    return productCount == 0;
+    if (state.hasValue) {
+      return state.value!.isEmpty;
+    }
+
+    return true;
   }
 }

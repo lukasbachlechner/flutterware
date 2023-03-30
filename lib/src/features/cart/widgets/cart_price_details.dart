@@ -36,7 +36,6 @@ class CartPriceDetails extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    print(cart.token);
     return Container(
       color: AppColors.greyLightAccent,
       width: double.infinity,

@@ -72,7 +72,7 @@ class CartButtonNotifier extends StateNotifier<CartButtonState> {
         ) {
     ref.listen(cartNotifierProvider, (previous, next) {
       if (next.hasValue &&
-          next.value!.lineItems!.isEmpty &&
+          next.value!.isEmpty &&
           state is CartIsNotEmptyCartButtonState) {
         setCartIsEmptyState();
       }

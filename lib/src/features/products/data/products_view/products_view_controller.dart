@@ -1,117 +1,159 @@
-import 'dart:async';
-
-import 'package:flutterware/src/features/products/data/products_repository.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutterware/src/features/products/data/products_view/products_view_filter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shopware6_client/shopware6_client.dart';
 
-class PaginatedProductsState {
-  final List<Product> products;
-  final List<Filter> filters;
-  final int page;
-  final int limit;
-  final int total;
-  final bool hasMore;
+import 'package:flutterware/src/features/search/data/search_repository.dart';
 
-  const PaginatedProductsState({
-    required this.products,
-    required this.filters,
-    required this.page,
-    required this.limit,
-    required this.total,
-    required this.hasMore,
-  });
+import '../products_repository.dart';
+import 'products_view_state.dart';
 
-  const PaginatedProductsState.initial()
-      : products = const <Product>[],
-        filters = const <Filter>[],
-        page = 1,
-        limit = 24,
-        total = 0,
-        hasMore = true;
+export 'products_view_state.dart';
 
-  PaginatedProductsState copyWith({
-    List<Product>? products,
-    List<Filter>? filters,
-    int? page,
-    int? limit,
-    int? total,
-    bool? hasMore,
-  }) {
-    return PaginatedProductsState(
-      products: products ?? this.products,
-      filters: filters ?? this.filters,
-      page: page ?? this.page,
-      limit: limit ?? this.limit,
-      total: total ?? this.total,
-      hasMore: hasMore ?? this.hasMore,
-    );
-  }
+part 'products_view_controller.g.dart';
 
-  @override
-  String toString() {
-    return 'PaginatedProductsState(products: $products, filters: $filters, page: $page, limit: $limit, total: $total)';
-  }
+class InvalidProductsViewTypeException implements Exception {
+  final String message = 'Wrong ProductViewType was passed.';
 }
 
-class AsyncPaginatedProductsController
-    extends AutoDisposeAsyncNotifier<PaginatedProductsState> {
+enum ProductsViewType {
+  byCategoryId,
+  search,
+}
+
+@Riverpod(keepAlive: false)
+class ProductsViewNotifier extends _$ProductsViewNotifier {
+  late final ProductsViewType _type;
+  late final dynamic _staticPayload;
+
   @override
-  FutureOr<PaginatedProductsState> build() async {
-    return _fetchProducts(const PaginatedProductsState.initial()).then((data) {
-      return data.copyWith(page: data.page + 1);
-    });
+  FutureOr<ProductsViewState> build(
+    ProductsViewType type,
+    dynamic staticPayload,
+  ) async {
+    _type = type;
+
+    switch (_type) {
+      case ProductsViewType.byCategoryId:
+        _staticPayload = staticPayload as ID;
+        break;
+      case ProductsViewType.search:
+        _staticPayload = staticPayload as String;
+        break;
+      default:
+        break;
+    }
+
+    final firstState = await fetchProducts();
+
+    return firstState;
   }
 
-  Future<PaginatedProductsState> _fetchProducts(
-      PaginatedProductsState currentState) async {
-    final productsResponse = await ref.read(productsRepositoryProvider).getAll(
-          CriteriaInput(
-            page: currentState.page,
-            limit: currentState.limit,
-            filter: [
-              EqualsFilter(field: 'parentId', value: null),
-              ...currentState.filters
-            ],
-            totalCountMode: 1,
-          ),
+  Future<ProductsViewState> fetchProducts() async {
+    // Initialize the new state. If it doesn't get mutated, the default one will be returned.
+    ProductsViewState newState = ProductsViewState.initial(type: _type);
+
+    // Copy the current state
+    final previousState = state.value?.copy();
+
+    if (previousState != null && previousState.isFirst) {
+      // Make sure to always show a loading state for the first load
+      state = const AsyncLoading();
+    }
+
+    try {
+      final productsResponse = await getRequest();
+
+      if (productsResponse.body != null) {
+        final responseBody = productsResponse.body!;
+
+        final totalItems = responseBody.total;
+        final maxPerPage = responseBody.limit!;
+        final currentPage = responseBody.page!;
+        final currentPageCount = responseBody.elements.length;
+
+        final hasMore =
+            maxPerPage * (currentPage - 1) + currentPageCount < totalItems!;
+
+        // Either copy the old or initial state with new values
+        newState = (previousState ?? newState).copyWith(
+          totalCount: totalItems,
+          records: [...?previousState?.records, ...responseBody.elements],
+          previousPageKeys: {
+            ...?previousState?.previousPageKeys,
+            responseBody.page ?? 1,
+          }.toList(),
+          nextPageKey: hasMore ? (responseBody.page ?? 1) + 1 : null,
         );
 
-    final newState = currentState.copyWith(
-      products: [...currentState.products, ...productsResponse.body!.elements],
-      total: productsResponse.body!.total,
-      hasMore: !!productsResponse.body!.elements.isNotEmpty,
-    );
+        ref.read(productsViewFilterProvider.notifier).setResponseData(
+              sorting: responseBody.sorting,
+              availableSortings: responseBody.availableSortings,
+              aggregations: responseBody.listingAggregations,
+            );
+      }
+    } catch (e, st) {
+      print(e);
+      print(st);
+    }
+
+    // Return the modified state
     return newState;
   }
 
-  Future<void> nextPage() async {
-    update((data) => _fetchProducts(data).then((data) {
-          return data.copyWith(page: data.page + 1);
-        }));
+  ProductsViewResponse getRequest() {
+    if (_type == ProductsViewType.byCategoryId) {
+      return getByCategoryId(_staticPayload);
+    } else if (_type == ProductsViewType.search) {
+      return getBySearch(_staticPayload);
+    } else {
+      throw InvalidProductsViewTypeException();
+    }
   }
 
-  void checkIndex(int index) {
-    state.whenData((currentState) {
-      final isCurrentLast = (index + 1) == currentState.page;
-      if (isCurrentLast && currentState.hasMore) {
-        print('[index $index]: load next page! ');
-        nextPage();
-      }
-    });
+  ProductsViewResponse getByCategoryId(ID categoryId) {
+    return ref.read(productsRepositoryProvider).byCategoryId(
+          categoryId,
+          state.value?.criteriaInput ?? const ProductListingCriteriaInput(),
+        );
   }
 
-  Future<void> resetAndAddFilter() async {
-    update((data) {
-      const modifiedState = PaginatedProductsState.initial();
+  ProductsViewResponse getBySearch(String search) {
+    return ref.read(searchRepositoryProvider).search(
+          search,
+          state.value?.criteriaInput ?? const ProductListingCriteriaInput(),
+        );
+  }
 
-      return _fetchProducts(modifiedState);
-    });
+  void filter() async {
+    final input = ref.read(productsViewFilterProvider.notifier).criteriaInput;
+
+    if (state.value?.criteriaInput != input) {
+      // Initialize a fresh state with the new input
+      state = AsyncData(
+        ProductsViewState.initial(
+          type: _type,
+          criteriaInput: input,
+        ),
+      );
+
+      // Fetch products & update state
+      state = AsyncData(await fetchProducts());
+    }
+  }
+
+  void reset() async {
+    state = AsyncData(
+      ProductsViewState.initial(
+        type: _type,
+      ),
+    );
+
+    // Fetch products & update state
+    state = AsyncData(await fetchProducts());
   }
 }
-
-final asyncPaginatedProductsControllerProvider =
-    AsyncNotifierProvider.autoDispose<AsyncPaginatedProductsController,
-        PaginatedProductsState>(AsyncPaginatedProductsController.new);
 
 enum ProductViewMode { list, grid }
 

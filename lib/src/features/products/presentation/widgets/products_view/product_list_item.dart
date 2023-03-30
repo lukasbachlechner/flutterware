@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterware/src/common_widgets/image/image.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
 import 'package:flutterware/src/constants/flutterware_icons.dart';
@@ -19,7 +20,7 @@ class ProductListItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(AppSizes.p16).copyWith(top: 0),
       child: InkWell(
-        onTap: () => context.goNamed(
+        onTap: () => context.pushNamed(
           SingleProductScreen.name,
           params: {
             "productId": product.id.toString(),
@@ -36,8 +37,8 @@ class ProductListItem extends StatelessWidget {
                   children: [
                     AspectRatio(
                       aspectRatio: 1,
-                      child: Image.network(
-                        product.cover?.media.url ?? '',
+                      child: FwImage(
+                        src: product.cover?.media.url ?? '',
                         fit: BoxFit.cover,
                       ),
                     ),

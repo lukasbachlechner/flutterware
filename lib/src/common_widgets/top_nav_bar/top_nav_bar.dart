@@ -17,13 +17,15 @@ class TopNavBar extends StatelessWidget {
             color: AppColors.blackSecondary,
           ),
       toolbarHeight: 50,
-      leading: IconButton(
-        onPressed: () => context.pop(),
-        icon: const Icon(
-          FlutterwareIcons.chevronLeft,
-          color: AppColors.blackSecondary,
-        ),
-      ),
+      leading: context.canPop()
+          ? IconButton(
+              onPressed: () => context.pop(),
+              icon: const Icon(
+                FlutterwareIcons.chevronLeft,
+                color: AppColors.blackSecondary,
+              ),
+            )
+          : null,
       title: Text(title),
       elevation: 0,
     );

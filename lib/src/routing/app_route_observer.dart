@@ -19,11 +19,6 @@ class AppRouteObserver extends NavigatorObserver {
   @override
   void didPush(Route<dynamic> route, Route<dynamic>? previousRoute) {
     switch (route.settings.name) {
-      /*   case SingleProductScreen.name:
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          cartButtonNotifier.setAddToCartState();
-        });
-        break; */
       case CartScreen.name:
         WidgetsBinding.instance.addPostFrameCallback((_) {
           if (ref.read(cartNotifierProvider.notifier).isEmpty) {
@@ -34,6 +29,10 @@ class AppRouteObserver extends NavigatorObserver {
         });
         break;
       default:
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          cartButtonNotifier.setInitialState();
+        });
+        break;
     }
   }
 

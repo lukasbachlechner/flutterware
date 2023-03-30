@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterware/src/common_widgets/image/image.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
 import 'package:flutterware/src/features/products/presentation/screens/single_product_screen.dart';
 import 'package:flutterware/src/features/products/presentation/widgets/product_rating.dart';
@@ -31,8 +32,8 @@ class ProductGridItem extends StatelessWidget {
               children: [
                 AspectRatio(
                   aspectRatio: 1,
-                  child: Image.network(
-                    product.cover?.media.url ?? '',
+                  child: FwImage(
+                    src: product.cover?.media.url ?? '',
                     fit: BoxFit.cover,
                   ),
                 ),

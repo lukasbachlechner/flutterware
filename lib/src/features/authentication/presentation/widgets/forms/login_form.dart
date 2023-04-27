@@ -24,10 +24,12 @@ class LoginForm extends HookConsumerWidget with EmailAndPasswordValidators {
       submitted.value = true;
       final loginController = ref.read(loginControllerProvider.notifier);
 
-      await loginController.submit(
-        email: emailController.text,
-        password: passwordController.text,
-      );
+      if (formKey.value.currentState!.validate()) {
+        await loginController.submit(
+          email: emailController.text,
+          password: passwordController.text,
+        );
+      }
     }
 
     final loginState = ref.watch(loginControllerProvider);

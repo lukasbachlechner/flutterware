@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/features/cart/data/cart_repository.dart';
 import 'package:flutterware/src/features/cart/screens/cart_screen.dart';
+import 'package:flutterware/src/features/checkout/presentation/screens/checkout_screen.dart';
 import 'package:flutterware/src/routing/app_router.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -107,7 +108,8 @@ class CartButtonNotifier extends StateNotifier<CartButtonState> {
 
   void setCartIsNotEmptyState() {
     state = CartIsNotEmptyCartButtonState(
-      onPressed: () => print('go to checkout!'),
+      onPressed: () =>
+          ref.read(goRouterProvider).pushNamed(CheckoutScreen.name),
     );
   }
 }

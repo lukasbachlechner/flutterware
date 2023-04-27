@@ -4,6 +4,8 @@ import 'package:flutterware/src/features/authentication/presentation/screens/acc
 import 'package:flutterware/src/features/authentication/presentation/screens/login_screen.dart';
 import 'package:flutterware/src/features/authentication/presentation/screens/signup_screen.dart';
 import 'package:flutterware/src/features/cart/screens/cart_screen.dart';
+import 'package:flutterware/src/features/checkout/presentation/screens/checkout_confirmation_screen.dart';
+import 'package:flutterware/src/features/checkout/presentation/screens/checkout_screen.dart';
 import 'package:flutterware/src/features/home/presentation/home_screen.dart';
 import 'package:flutterware/src/features/menu/presentation/screens/menu_screen.dart';
 import 'package:flutterware/src/features/menu/presentation/screens/menu_sublevel_screen.dart';
@@ -137,7 +139,19 @@ GoRouter goRouter(GoRouterRef ref) {
         name: SignupScreen.name,
         parentNavigatorKey: rootNavigatorKey,
         builder: (context, state) => const SignupScreen(),
-      )
+      ),
+      GoRoute(
+        path: CheckoutScreen.path,
+        name: CheckoutScreen.name,
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) => const CheckoutScreen(),
+      ),
+      GoRoute(
+        path: CheckoutConfirmationScreen.path,
+        name: CheckoutConfirmationScreen.name,
+        parentNavigatorKey: rootNavigatorKey,
+        builder: (context, state) => const CheckoutConfirmationScreen(),
+      ),
     ],
   );
 }

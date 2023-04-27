@@ -1,53 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutterware/src/common_widgets/accordion/accordion.dart';
 import 'package:flutterware/src/common_widgets/button/button.dart';
-import 'package:flutterware/src/common_widgets/list_tile/list_tile.dart';
 import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
-import 'package:flutterware/src/constants/flutterware_icons.dart';
 import 'package:flutterware/src/features/products/data/products_view/products_view_filter.dart';
 import 'package:flutterware/src/features/products/presentation/widgets/filter_dialog/filter_dialog_header.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:shopware6_client/shopware6_client.dart';
 
-import '../../../../../common_widgets/circle_icon/circle_icon.dart';
 import '../../../data/products_view/products_view_controller.dart';
-
-class FilterDialogOption extends StatelessWidget {
-  final String title;
-  final Widget? leading;
-  final bool isSelected;
-  final VoidCallback? onTap;
-
-  const FilterDialogOption({
-    super.key,
-    required this.title,
-    this.leading,
-    this.isSelected = false,
-    this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return FwListTile(
-      onTap: onTap,
-      textColor: isSelected ? AppColors.primaryColor : null,
-      padding: const EdgeInsets.only(
-        top: AppSizes.p16,
-        bottom: AppSizes.p16,
-        left: AppSizes.p24,
-        right: AppSizes.p20,
-      ),
-      leading: leading,
-      title: title,
-      trailing: isSelected
-          ? const CircleIcon(
-              FlutterwareIcons.checked,
-            )
-          : CircleIcon.placeholder(),
-    );
-  }
-}
+import 'filter_dialog_option.dart';
 
 class FilterDialogPropertyGroupOption extends ConsumerWidget {
   final PropertyGroupOption propertyGroupOption;

@@ -1,4 +1,5 @@
 import 'package:flutterware/src/api/shopware_client.dart';
+import 'package:flutterware/src/features/global/data/overlay_loading_notifier.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shopware6_client/shopware6_client.dart';
 
@@ -69,7 +70,7 @@ class CartNotifier extends _$CartNotifier {
   }
 
   Future<void> addItems(List<LineItem> items) async {
-    state = const AsyncLoading();
+    ref.showOverlay();
     try {
       final newCartResponse =
           await ref.read(cartRepositoryProvider).addItems(items);
@@ -78,11 +79,13 @@ class CartNotifier extends _$CartNotifier {
       }
     } catch (e, st) {
       state = AsyncError(e, st);
+    } finally {
+      ref.hideOverlay();
     }
   }
 
   Future<void> updateItems(List<LineItem> items) async {
-    state = const AsyncLoading();
+    ref.showOverlay();
     try {
       final newCartResponse =
           await ref.read(cartRepositoryProvider).updateItems(items);
@@ -91,11 +94,13 @@ class CartNotifier extends _$CartNotifier {
       }
     } catch (e, st) {
       state = AsyncError(e, st);
+    } finally {
+      ref.hideOverlay();
     }
   }
 
   Future<void> removeItems(List<ID> ids) async {
-    state = const AsyncLoading();
+    ref.showOverlay();
     try {
       final newCartResponse =
           await ref.read(cartRepositoryProvider).removeItems(ids);
@@ -104,6 +109,8 @@ class CartNotifier extends _$CartNotifier {
       }
     } catch (e, st) {
       state = AsyncError(e, st);
+    } finally {
+      ref.hideOverlay();
     }
   }
 

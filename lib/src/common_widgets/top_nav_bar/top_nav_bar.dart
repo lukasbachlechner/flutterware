@@ -4,7 +4,7 @@ import 'package:flutterware/src/constants/app_colors.dart';
 import 'package:flutterware/src/constants/flutterware_icons.dart';
 import 'package:go_router/go_router.dart';
 
-class TopNavBar extends StatelessWidget {
+class TopNavBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   const TopNavBar({super.key, required this.title});
 
@@ -30,4 +30,8 @@ class TopNavBar extends StatelessWidget {
       elevation: 0,
     );
   }
+
+  @override
+  // TODO: implement preferredSize
+  Size get preferredSize => AppBar().preferredSize;
 }

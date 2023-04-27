@@ -26,7 +26,7 @@ class ProductAddToCartButton extends HookConsumerWidget {
       onPressed: () async {
         isLoading.value = true;
 
-        await ref.read(cartNotifierProvider.notifier).addItems([
+        ref.read(cartNotifierProvider.notifier).addItems([
           LineItem(
             id: productId,
             referencedId: productId,

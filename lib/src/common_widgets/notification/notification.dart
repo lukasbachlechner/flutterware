@@ -10,11 +10,13 @@ enum FwNotificationType {
 }
 
 class FwNotification extends StatelessWidget {
+  final String? title;
   final String message;
   final FwNotificationType type;
 
   const FwNotification({
     super.key,
+    this.title,
     required this.message,
     required this.type,
   });
@@ -76,7 +78,7 @@ class FwNotification extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  _headingText,
+                  title ?? _headingText,
                   style: Theme.of(context).textTheme.displaySmall!.copyWith(
                         color: AppColors.white,
                       ),

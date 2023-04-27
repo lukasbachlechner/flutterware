@@ -55,6 +55,8 @@ dependencies:
   flutter_keyboard_visibility: ^5.4.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  collection: ^1.17.0
+  go_router_builder: ^1.2.1
 
 dev_dependencies:
   flutter_test:

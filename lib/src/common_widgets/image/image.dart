@@ -16,7 +16,10 @@ class FwImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (src == null || src!.isEmpty) {
-      return const Placeholder();
+      return Placeholder(
+        fallbackHeight: height ?? 100,
+        fallbackWidth: width ?? 100,
+      );
     }
     return Image.network(
       src ?? '',

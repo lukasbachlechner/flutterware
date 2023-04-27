@@ -19,8 +19,16 @@ class LocalStorageRepository {
     }
   }
 
+  Future<void> updateContextToken(String token) async {
+    return box.put(contextTokenKey, token);
+  }
+
   String? getContextToken() {
     return box.get(contextTokenKey);
+  }
+
+  Future<void> deleteContextToken() async {
+    return box.delete(contextTokenKey);
   }
 }
 

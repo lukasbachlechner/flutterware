@@ -46,7 +46,8 @@ class LoginScreen extends StatelessWidget {
               child: Button(
                 buttonType: ButtonType.text,
                 label: 'Register now',
-                onPressed: () => context.pushNamed(SignupScreen.name),
+                onPressed: () =>
+                    context.pushReplacementNamed(SignupScreen.name),
               ),
             ),
           ],

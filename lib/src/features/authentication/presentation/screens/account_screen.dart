@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutterware/src/common_widgets/button/button.dart';
-import 'package:flutterware/src/features/authentication/presentation/screens/login_screen.dart';
-import 'package:go_router/go_router.dart';
+import 'package:flutterware/src/common_widgets/page_wrap/page_wrap.dart';
+import 'package:flutterware/src/features/authentication/presentation/views/account_logged_in_view.dart';
+import 'package:flutterware/src/features/authentication/presentation/views/account_logged_out_view.dart';
+
+import '../widgets/auth_gate.dart';
 
 class AccountScreen extends StatelessWidget {
   static const path = '/account';
@@ -10,15 +12,11 @@ class AccountScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Button(
-          label: 'Login',
-          onPressed: () => context.pushNamed(LoginScreen.name),
-        )
-      ],
-    ));
+    return const PageWrap(
+      child: AuthGate(
+        loggedInChild: AccountLoggedInView(),
+        loggedOutChild: AccountLoggedOutView(),
+      ),
+    );
   }
 }

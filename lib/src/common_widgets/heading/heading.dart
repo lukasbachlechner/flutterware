@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterware/src/constants/app_sizes.dart';
 
 enum HeadingLevel { h1, h2, h3, h4, h5, h6 }
 
@@ -7,9 +8,11 @@ class Heading extends StatelessWidget {
     this.data, {
     super.key,
     this.level = HeadingLevel.h1,
+    this.inContainer = false,
   });
 
   final String data;
+  final bool inContainer;
   final HeadingLevel level;
 
   /// These levels will automatically be converted to uppercase.
@@ -37,9 +40,14 @@ class Heading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      _maybeUppercaseData(),
-      style: _mapLevelToStyle(context),
+    return Padding(
+      padding: inContainer
+          ? const EdgeInsets.symmetric(horizontal: AppSizes.p16)
+          : EdgeInsets.zero,
+      child: Text(
+        _maybeUppercaseData(),
+        style: _mapLevelToStyle(context),
+      ),
     );
   }
 }

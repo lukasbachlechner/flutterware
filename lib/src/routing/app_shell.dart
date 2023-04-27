@@ -12,6 +12,7 @@ class AppShell extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: child,
+      resizeToAvoidBottomInset: true,
       bottomNavigationBar: const FwBottomNavigationBar(),
       floatingActionButton: const FwFloatingActionButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,

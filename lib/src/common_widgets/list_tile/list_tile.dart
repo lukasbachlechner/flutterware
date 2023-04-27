@@ -10,6 +10,7 @@ class FwListTile extends StatelessWidget {
   final Color? textColor;
   final EdgeInsets? padding;
   final Widget? trailing;
+  final Color? backgroundColor;
 
   const FwListTile({
     super.key,
@@ -19,12 +20,13 @@ class FwListTile extends StatelessWidget {
     this.textColor,
     this.padding,
     this.trailing,
+    this.backgroundColor,
   });
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: AppColors.white,
+      color: backgroundColor ?? AppColors.white,
       child: InkWell(
         onTap: onTap,
         child: Container(

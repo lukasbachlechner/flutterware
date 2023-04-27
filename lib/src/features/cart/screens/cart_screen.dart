@@ -26,9 +26,7 @@ class CartScreen extends ConsumerWidget {
                 if (cartNotifier.isEmpty) {
                   return const EmptyCart();
                 }
-                return CartDetails(
-                  cart: cart.cart,
-                );
+                return const CartDetails();
               },
               value: cartValue,
             ),

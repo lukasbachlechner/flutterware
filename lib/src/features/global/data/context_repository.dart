@@ -8,9 +8,13 @@ part 'context_repository.g.dart';
 class ContextRepository {
   final ShopwareClient client;
   late final ContextService contextService;
+  late final SystemService systemService;
+  late final PaymentMethodService paymentMethodService;
 
   ContextRepository(this.client) {
     contextService = client.context;
+    systemService = client.system;
+    paymentMethodService = client.paymentMethod;
   }
 
   Future<Response<CurrentContext>> fetchCurrentContext() {
@@ -21,6 +25,47 @@ class ContextRepository {
     ContextPatchRequest contextPatchRequest,
   ) {
     return contextService.modifyCurrentContext(contextPatchRequest);
+  }
+
+  Future<Response<List<Currency>>> fetchCurrencies([
+    CriteriaInput? criteriaInput,
+  ]) {
+    return systemService.fetchCurrencies(criteriaInput);
+  }
+
+  Future<Response<LanguageCriteriaResponse>> fetchLanguages([
+    CriteriaInput? criteriaInput,
+  ]) {
+    return systemService.fetchLanguages(criteriaInput);
+  }
+
+  Future<Response<CountryCriteriaResponse>> fetchCountries([
+    CriteriaInput? criteriaInput,
+  ]) {
+    return systemService.fetchCountries(criteriaInput);
+  }
+
+  Future<Response<SalutationCriteriaResponse>> fetchSalutations([
+    CriteriaInput? criteriaInput,
+  ]) {
+    return systemService.fetchSalutations(criteriaInput);
+  }
+
+  Future<Response<ShippingMethodCriteriaResponse>> fetchShippingMethods([
+    CriteriaInput? criteriaInput,
+    bool onlyAvailable = true,
+  ]) {
+    return systemService.fetchShippingMethods(
+      criteriaInput,
+      onlyAvailable: onlyAvailable,
+    );
+  }
+
+  Future<Response<PaymentMethodCriteriaResponse>> fetchPaymentMethods([
+    CriteriaInput? criteriaInput,
+    bool onlyAvailable = true,
+  ]) {
+    return paymentMethodService.getPaymentMethods();
   }
 }
 

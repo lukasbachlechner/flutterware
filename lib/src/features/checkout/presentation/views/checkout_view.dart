@@ -47,53 +47,5 @@ class CheckoutView extends HookConsumerWidget {
       ),
       bottomNavigationBar: const CheckoutFooter(),
     );
-
-    /*  return Scaffold(
-      body: SafeArea(
-        child: PageWrap(
-          child: CustomScrollView(
-            controller: scrollController,
-            slivers: [
-              const SliverPersistentHeader(
-                delegate: CheckoutHeaderDelegate(),
-                pinned: true,
-                floating: true,
-              ),
-              const SliverToBoxAdapter(
-                child: gapH40,
-              ),
-              /*  SliverToBoxAdapter(
-                child: Consumer(
-                  builder: (context, ref, child) {
-                    return ref.watch(checkoutNotifierProvider).content;
-                  },
-                ),
-              ), */
-              SliverFillRemaining(
-                child: TabBarView(
-                  physics: const NeverScrollableScrollPhysics(),
-                  controller: pageController,
-                  children: [
-                    ...ref.watch(checkoutNotifierProvider.notifier).steps.map(
-                          (step) => step.content,
-                        ),
-                  ],
-                ),
-              ),
-              /* const SliverToBoxAdapter(
-                child: gapH40,
-              ), */
-              const SliverToBoxAdapter(
-                child: CartPriceDetails(),
-              ),
-              /*  const SliverToBoxAdapter(
-                child: CheckoutFooter(),
-              ), */
-            ],
-          ),
-        ),
-      ),
-      //  bottomNavigationBar: const CheckoutFooter(),
-    ); */
   }
 }

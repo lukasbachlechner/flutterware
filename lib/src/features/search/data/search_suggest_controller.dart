@@ -12,7 +12,7 @@ class SearchSuggestController extends _$SearchSuggestController {
     return [];
   }
 
-  void suggest(String query) async {
+  Future<void> suggest(String query) async {
     try {
       final response = await ref
           .read(searchRepositoryProvider)

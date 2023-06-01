@@ -1,0 +1,77 @@
+{
+  "entity": "salutation",
+  "total": 3,
+  "aggregations": [],
+  "page": 1,
+  "limit": 100,
+  "elements": [
+    {
+      "salutationKey": "mr",
+      "displayName": "Mr.",
+      "letterName": "Dear Mr.",
+      "_uniqueIdentifier": "54aba691996b4cafa209be7ae3fab496",
+      "versionId": null,
+      "translated": {
+        "displayName": "Mr.",
+        "letterName": "Dear Mr.",
+        "customFields": {}
+      },
+      "createdAt": "2022-08-09T14:40:12.704+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "54aba691996b4cafa209be7ae3fab496",
+      "customFields": null,
+      "apiAlias": "salutation"
+    },
+    {
+      "salutationKey": "mrs",
+      "displayName": "Mrs.",
+      "letterName": "Dear Mrs.",
+      "_uniqueIdentifier": "effc2aaf04a84fd499eefd0a324f6a49",
+      "versionId": null,
+      "translated": {
+        "displayName": "Mrs.",
+        "letterName": "Dear Mrs.",
+        "customFields": {}
+      },
+      "createdAt": "2022-08-09T14:40:12.711+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "effc2aaf04a84fd499eefd0a324f6a49",
+      "customFields": null,
+      "apiAlias": "salutation"
+    },
+    {
+      "salutationKey": "not_specified",
+      "displayName": "Not specified",
+      "letterName": " ",
+      "_uniqueIdentifier": "03f6d0144eff4862883cfa543c9398b7",
+      "versionId": null,
+      "translated": {
+        "displayName": "Not specified",
+        "letterName": " ",
+        "customFields": {}
+      },
+      "createdAt": "2022-08-09T14:40:12.716+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "03f6d0144eff4862883cfa543c9398b7",
+      "customFields": null,
+      "apiAlias": "salutation"
+    }
+  ],
+  "states": [],
+  "apiAlias": "dal_entity_search_result"
+}

@@ -1,0 +1,1272 @@
+{
+  "sorting": null,
+  "currentFilters": [],
+  "streamId": null,
+  "entity": "product",
+  "total": 6,
+  "aggregations": [],
+  "page": 1,
+  "limit": 100,
+  "elements": [
+    {
+      "calculatedPrices": [],
+      "calculatedPrice": {
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_price"
+      },
+      "sortedProperties": null,
+      "calculatedCheapestPrice": {
+        "hasRange": false,
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_cheapest_price"
+      },
+      "isNew": false,
+      "calculatedMaxPurchase": 100,
+      "seoCategory": null,
+      "cheapestPriceContainer": {
+        "value": {
+          "804d2a8687404cf89adcf321cfcd248a": {
+            "default": {
+              "parent_id": "804d2a8687404cf89adcf321cfcd248a",
+              "variant_id": "804d2a8687404cf89adcf321cfcd248a",
+              "rule_id": null,
+              "is_ranged": "0",
+              "price": {
+                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                  "net": 42.016806722689,
+                  "gross": 50,
+                  "linked": true,
+                  "listPrice": null,
+                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                  "regulationPrice": null
+                }
+              },
+              "min_purchase": "1",
+              "unit_id": null,
+              "purchase_unit": null,
+              "reference_unit": null,
+              "child_count": "0"
+            }
+          }
+        },
+        "default": null,
+        "apiAlias": "cheapest_price_container"
+      },
+      "parentId": null,
+      "childCount": 0,
+      "taxId": "be613fce57654f84bee44f6f41250436",
+      "manufacturerId": null,
+      "unitId": null,
+      "active": true,
+      "displayGroup": "e30e1402dc9b5f8974c94403ecfddbdf",
+      "manufacturerNumber": null,
+      "ean": null,
+      "sales": 0,
+      "productNumber": "SW10011",
+      "stock": 0,
+      "availableStock": 0,
+      "available": true,
+      "deliveryTimeId": null,
+      "deliveryTime": null,
+      "restockTime": null,
+      "isCloseout": false,
+      "purchaseSteps": 1,
+      "maxPurchase": null,
+      "minPurchase": 1,
+      "purchaseUnit": null,
+      "referenceUnit": null,
+      "shippingFree": false,
+      "markAsTopseller": null,
+      "weight": null,
+      "width": null,
+      "height": null,
+      "length": null,
+      "releaseDate": null,
+      "categoryTree": [
+        "7adcd0fde11e484fbec2325f91d13ef9",
+        "85a5d5fda8fb482bbcbd083c9b55f8e3"
+      ],
+      "streamIds": null,
+      "optionIds": null,
+      "propertyIds": null,
+      "name": "Testprodukt Kopie Kopie Kopie adsf",
+      "keywords": null,
+      "description": null,
+      "metaDescription": null,
+      "metaTitle": null,
+      "packUnit": null,
+      "packUnitPlural": null,
+      "mainVariantId": null,
+      "tax": {
+        "taxRate": 19,
+        "name": "Standard rate",
+        "position": 1,
+        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+        "versionId": null,
+        "translated": [],
+        "createdAt": "2022-08-09T14:40:13.554+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "be613fce57654f84bee44f6f41250436",
+        "customFields": null,
+        "apiAlias": "tax"
+      },
+      "manufacturer": null,
+      "unit": null,
+      "cover": null,
+      "parent": null,
+      "children": null,
+      "media": null,
+      "cmsPageId": null,
+      "cmsPage": null,
+      "translations": null,
+      "categories": null,
+      "properties": null,
+      "options": [],
+      "configuratorSettings": null,
+      "categoriesRo": null,
+      "coverId": null,
+      "blacklistIds": null,
+      "whitelistIds": null,
+      "categoryIds": ["85a5d5fda8fb482bbcbd083c9b55f8e3"],
+      "productReviews": null,
+      "ratingAverage": null,
+      "mainCategories": null,
+      "seoUrls": null,
+      "crossSellings": null,
+      "canonicalProductId": null,
+      "canonicalProduct": null,
+      "streams": null,
+      "_uniqueIdentifier": "804d2a8687404cf89adcf321cfcd248a",
+      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+      "translated": {
+        "metaDescription": null,
+        "name": "Testprodukt Kopie Kopie Kopie adsf",
+        "keywords": null,
+        "description": null,
+        "metaTitle": null,
+        "packUnit": null,
+        "packUnitPlural": null,
+        "customFields": {}
+      },
+      "createdAt": "2023-04-17T11:34:10.575+00:00",
+      "updatedAt": "2023-04-17T11:34:19.822+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        },
+        "search": {
+          "_uniqueIdentifier": null,
+          "translated": [],
+          "id": "804d2a8687404cf89adcf321cfcd248a",
+          "productNumber": "SW10011",
+          "product_number": "SW10011",
+          "autoIncrement": 89,
+          "auto_increment": 89,
+          "_score": "770",
+          "apiAlias": "array"
+        }
+      },
+      "id": "804d2a8687404cf89adcf321cfcd248a",
+      "customFields": {},
+      "apiAlias": "product"
+    },
+    {
+      "calculatedPrices": [],
+      "calculatedPrice": {
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_price"
+      },
+      "sortedProperties": null,
+      "calculatedCheapestPrice": {
+        "hasRange": false,
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_cheapest_price"
+      },
+      "isNew": false,
+      "calculatedMaxPurchase": 100,
+      "seoCategory": null,
+      "cheapestPriceContainer": {
+        "value": {
+          "8ca554e32a5e450983b561635d0cb517": {
+            "default": {
+              "parent_id": "8ca554e32a5e450983b561635d0cb517",
+              "variant_id": "8ca554e32a5e450983b561635d0cb517",
+              "rule_id": null,
+              "is_ranged": "0",
+              "price": {
+                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                  "net": 42.016806722689,
+                  "gross": 50,
+                  "linked": true,
+                  "listPrice": null,
+                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                  "regulationPrice": null
+                }
+              },
+              "min_purchase": "1",
+              "unit_id": null,
+              "purchase_unit": null,
+              "reference_unit": null,
+              "child_count": "0"
+            }
+          }
+        },
+        "default": null,
+        "apiAlias": "cheapest_price_container"
+      },
+      "parentId": null,
+      "childCount": 0,
+      "taxId": "be613fce57654f84bee44f6f41250436",
+      "manufacturerId": null,
+      "unitId": null,
+      "active": true,
+      "displayGroup": "483edff5f16bf98e544e0bde08ecb8b6",
+      "manufacturerNumber": null,
+      "ean": null,
+      "sales": 0,
+      "productNumber": "SW10010",
+      "stock": 0,
+      "availableStock": 0,
+      "available": true,
+      "deliveryTimeId": null,
+      "deliveryTime": null,
+      "restockTime": null,
+      "isCloseout": false,
+      "purchaseSteps": 1,
+      "maxPurchase": null,
+      "minPurchase": 1,
+      "purchaseUnit": null,
+      "referenceUnit": null,
+      "shippingFree": false,
+      "markAsTopseller": null,
+      "weight": null,
+      "width": null,
+      "height": null,
+      "length": null,
+      "releaseDate": null,
+      "categoryTree": [
+        "7adcd0fde11e484fbec2325f91d13ef9",
+        "85a5d5fda8fb482bbcbd083c9b55f8e3"
+      ],
+      "streamIds": null,
+      "optionIds": null,
+      "propertyIds": null,
+      "name": "Testprodukt Kopie Kopie Kopie Kopie",
+      "keywords": null,
+      "description": null,
+      "metaDescription": null,
+      "metaTitle": null,
+      "packUnit": null,
+      "packUnitPlural": null,
+      "mainVariantId": null,
+      "tax": {
+        "taxRate": 19,
+        "name": "Standard rate",
+        "position": 1,
+        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+        "versionId": null,
+        "translated": [],
+        "createdAt": "2022-08-09T14:40:13.554+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "be613fce57654f84bee44f6f41250436",
+        "customFields": null,
+        "apiAlias": "tax"
+      },
+      "manufacturer": null,
+      "unit": null,
+      "cover": null,
+      "parent": null,
+      "children": null,
+      "media": null,
+      "cmsPageId": null,
+      "cmsPage": null,
+      "translations": null,
+      "categories": null,
+      "properties": null,
+      "options": [],
+      "configuratorSettings": null,
+      "categoriesRo": null,
+      "coverId": null,
+      "blacklistIds": null,
+      "whitelistIds": null,
+      "categoryIds": ["85a5d5fda8fb482bbcbd083c9b55f8e3"],
+      "productReviews": null,
+      "ratingAverage": null,
+      "mainCategories": null,
+      "seoUrls": null,
+      "crossSellings": null,
+      "canonicalProductId": null,
+      "canonicalProduct": null,
+      "streams": null,
+      "_uniqueIdentifier": "8ca554e32a5e450983b561635d0cb517",
+      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+      "translated": {
+        "metaDescription": null,
+        "name": "Testprodukt Kopie Kopie Kopie Kopie",
+        "keywords": null,
+        "description": null,
+        "metaTitle": null,
+        "packUnit": null,
+        "packUnitPlural": null,
+        "customFields": {}
+      },
+      "createdAt": "2023-04-17T11:33:41.444+00:00",
+      "updatedAt": "2023-04-17T11:33:46.576+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        },
+        "search": {
+          "_uniqueIdentifier": null,
+          "translated": [],
+          "id": "8ca554e32a5e450983b561635d0cb517",
+          "productNumber": "SW10010",
+          "product_number": "SW10010",
+          "autoIncrement": 88,
+          "auto_increment": 88,
+          "_score": "770",
+          "apiAlias": "array"
+        }
+      },
+      "id": "8ca554e32a5e450983b561635d0cb517",
+      "customFields": {},
+      "apiAlias": "product"
+    },
+    {
+      "calculatedPrices": [],
+      "calculatedPrice": {
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_price"
+      },
+      "sortedProperties": null,
+      "calculatedCheapestPrice": {
+        "hasRange": false,
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_cheapest_price"
+      },
+      "isNew": false,
+      "calculatedMaxPurchase": 100,
+      "seoCategory": null,
+      "cheapestPriceContainer": {
+        "value": {
+          "7221f6765ee3492d825d552cfbcb6307": {
+            "default": {
+              "parent_id": "7221f6765ee3492d825d552cfbcb6307",
+              "variant_id": "7221f6765ee3492d825d552cfbcb6307",
+              "rule_id": null,
+              "is_ranged": "0",
+              "price": {
+                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                  "net": 42.016806722689,
+                  "gross": 50,
+                  "linked": true,
+                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca"
+                }
+              },
+              "min_purchase": "1",
+              "unit_id": null,
+              "purchase_unit": null,
+              "reference_unit": null,
+              "child_count": "0"
+            }
+          }
+        },
+        "default": null,
+        "apiAlias": "cheapest_price_container"
+      },
+      "parentId": null,
+      "childCount": 0,
+      "taxId": "be613fce57654f84bee44f6f41250436",
+      "manufacturerId": null,
+      "unitId": null,
+      "active": true,
+      "displayGroup": "6266c775865df24f7051b06bed284a5b",
+      "manufacturerNumber": null,
+      "ean": null,
+      "sales": 0,
+      "productNumber": "SW10006",
+      "stock": 0,
+      "availableStock": 0,
+      "available": true,
+      "deliveryTimeId": null,
+      "deliveryTime": null,
+      "restockTime": null,
+      "isCloseout": false,
+      "purchaseSteps": 1,
+      "maxPurchase": null,
+      "minPurchase": 1,
+      "purchaseUnit": null,
+      "referenceUnit": null,
+      "shippingFree": false,
+      "markAsTopseller": null,
+      "weight": null,
+      "width": null,
+      "height": null,
+      "length": null,
+      "releaseDate": null,
+      "categoryTree": [
+        "7adcd0fde11e484fbec2325f91d13ef9",
+        "85a5d5fda8fb482bbcbd083c9b55f8e3"
+      ],
+      "streamIds": null,
+      "optionIds": null,
+      "propertyIds": null,
+      "name": "Testprodukt",
+      "keywords": null,
+      "description": null,
+      "metaDescription": null,
+      "metaTitle": null,
+      "packUnit": null,
+      "packUnitPlural": null,
+      "mainVariantId": null,
+      "tax": {
+        "taxRate": 19,
+        "name": "Standard rate",
+        "position": 1,
+        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+        "versionId": null,
+        "translated": [],
+        "createdAt": "2022-08-09T14:40:13.554+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "be613fce57654f84bee44f6f41250436",
+        "customFields": null,
+        "apiAlias": "tax"
+      },
+      "manufacturer": null,
+      "unit": null,
+      "cover": null,
+      "parent": null,
+      "children": null,
+      "media": null,
+      "cmsPageId": null,
+      "cmsPage": null,
+      "translations": null,
+      "categories": null,
+      "properties": null,
+      "options": [],
+      "configuratorSettings": null,
+      "categoriesRo": null,
+      "coverId": null,
+      "blacklistIds": null,
+      "whitelistIds": null,
+      "categoryIds": ["85a5d5fda8fb482bbcbd083c9b55f8e3"],
+      "productReviews": null,
+      "ratingAverage": null,
+      "mainCategories": null,
+      "seoUrls": null,
+      "crossSellings": null,
+      "canonicalProductId": null,
+      "canonicalProduct": null,
+      "streams": null,
+      "_uniqueIdentifier": "7221f6765ee3492d825d552cfbcb6307",
+      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+      "translated": {
+        "metaDescription": null,
+        "name": "Testprodukt",
+        "keywords": null,
+        "description": null,
+        "metaTitle": null,
+        "packUnit": null,
+        "packUnitPlural": null,
+        "customFields": {}
+      },
+      "createdAt": "2023-04-17T11:32:00.880+00:00",
+      "updatedAt": "2023-04-17T11:32:01.108+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        },
+        "search": {
+          "_uniqueIdentifier": null,
+          "translated": [],
+          "id": "7221f6765ee3492d825d552cfbcb6307",
+          "productNumber": "SW10006",
+          "product_number": "SW10006",
+          "autoIncrement": 84,
+          "auto_increment": 84,
+          "_score": "770",
+          "apiAlias": "array"
+        }
+      },
+      "id": "7221f6765ee3492d825d552cfbcb6307",
+      "customFields": {},
+      "apiAlias": "product"
+    },
+    {
+      "calculatedPrices": [],
+      "calculatedPrice": {
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_price"
+      },
+      "sortedProperties": null,
+      "calculatedCheapestPrice": {
+        "hasRange": false,
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_cheapest_price"
+      },
+      "isNew": false,
+      "calculatedMaxPurchase": 100,
+      "seoCategory": null,
+      "cheapestPriceContainer": {
+        "value": {
+          "36cb18c2b82642efa34f9fa39eed52ac": {
+            "default": {
+              "parent_id": "36cb18c2b82642efa34f9fa39eed52ac",
+              "variant_id": "36cb18c2b82642efa34f9fa39eed52ac",
+              "rule_id": null,
+              "is_ranged": "0",
+              "price": {
+                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                  "net": 42.016806722689,
+                  "gross": 50,
+                  "linked": true,
+                  "listPrice": null,
+                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                  "regulationPrice": null
+                }
+              },
+              "min_purchase": "1",
+              "unit_id": null,
+              "purchase_unit": null,
+              "reference_unit": null,
+              "child_count": "0"
+            }
+          }
+        },
+        "default": null,
+        "apiAlias": "cheapest_price_container"
+      },
+      "parentId": null,
+      "childCount": 0,
+      "taxId": "be613fce57654f84bee44f6f41250436",
+      "manufacturerId": null,
+      "unitId": null,
+      "active": true,
+      "displayGroup": "b759203be195f62ce8fcc06e1e2f326d",
+      "manufacturerNumber": null,
+      "ean": null,
+      "sales": 0,
+      "productNumber": "SW10007",
+      "stock": 0,
+      "availableStock": 0,
+      "available": true,
+      "deliveryTimeId": null,
+      "deliveryTime": null,
+      "restockTime": null,
+      "isCloseout": false,
+      "purchaseSteps": 1,
+      "maxPurchase": null,
+      "minPurchase": 1,
+      "purchaseUnit": null,
+      "referenceUnit": null,
+      "shippingFree": false,
+      "markAsTopseller": null,
+      "weight": null,
+      "width": null,
+      "height": null,
+      "length": null,
+      "releaseDate": null,
+      "categoryTree": [
+        "7adcd0fde11e484fbec2325f91d13ef9",
+        "85a5d5fda8fb482bbcbd083c9b55f8e3"
+      ],
+      "streamIds": null,
+      "optionIds": null,
+      "propertyIds": null,
+      "name": "Testprodukt Kopie",
+      "keywords": null,
+      "description": null,
+      "metaDescription": null,
+      "metaTitle": null,
+      "packUnit": null,
+      "packUnitPlural": null,
+      "mainVariantId": null,
+      "tax": {
+        "taxRate": 19,
+        "name": "Standard rate",
+        "position": 1,
+        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+        "versionId": null,
+        "translated": [],
+        "createdAt": "2022-08-09T14:40:13.554+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "be613fce57654f84bee44f6f41250436",
+        "customFields": null,
+        "apiAlias": "tax"
+      },
+      "manufacturer": null,
+      "unit": null,
+      "cover": null,
+      "parent": null,
+      "children": null,
+      "media": null,
+      "cmsPageId": null,
+      "cmsPage": null,
+      "translations": null,
+      "categories": null,
+      "properties": null,
+      "options": [],
+      "configuratorSettings": null,
+      "categoriesRo": null,
+      "coverId": null,
+      "blacklistIds": null,
+      "whitelistIds": null,
+      "categoryIds": ["85a5d5fda8fb482bbcbd083c9b55f8e3"],
+      "productReviews": null,
+      "ratingAverage": null,
+      "mainCategories": null,
+      "seoUrls": null,
+      "crossSellings": null,
+      "canonicalProductId": null,
+      "canonicalProduct": null,
+      "streams": null,
+      "_uniqueIdentifier": "36cb18c2b82642efa34f9fa39eed52ac",
+      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+      "translated": {
+        "metaDescription": null,
+        "name": "Testprodukt Kopie",
+        "keywords": null,
+        "description": null,
+        "metaTitle": null,
+        "packUnit": null,
+        "packUnitPlural": null,
+        "customFields": {}
+      },
+      "createdAt": "2023-04-17T11:32:05.587+00:00",
+      "updatedAt": "2023-04-17T11:32:41.296+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        },
+        "search": {
+          "_uniqueIdentifier": null,
+          "translated": [],
+          "id": "36cb18c2b82642efa34f9fa39eed52ac",
+          "productNumber": "SW10007",
+          "product_number": "SW10007",
+          "autoIncrement": 85,
+          "auto_increment": 85,
+          "_score": "770",
+          "apiAlias": "array"
+        }
+      },
+      "id": "36cb18c2b82642efa34f9fa39eed52ac",
+      "customFields": {},
+      "apiAlias": "product"
+    },
+    {
+      "calculatedPrices": [],
+      "calculatedPrice": {
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_price"
+      },
+      "sortedProperties": null,
+      "calculatedCheapestPrice": {
+        "hasRange": false,
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_cheapest_price"
+      },
+      "isNew": false,
+      "calculatedMaxPurchase": 100,
+      "seoCategory": null,
+      "cheapestPriceContainer": {
+        "value": {
+          "db2502260b6843168acc78cb49037e2b": {
+            "default": {
+              "parent_id": "db2502260b6843168acc78cb49037e2b",
+              "variant_id": "db2502260b6843168acc78cb49037e2b",
+              "rule_id": null,
+              "is_ranged": "0",
+              "price": {
+                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                  "net": 42.016806722689,
+                  "gross": 50,
+                  "linked": true,
+                  "listPrice": null,
+                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                  "regulationPrice": null
+                }
+              },
+              "min_purchase": "1",
+              "unit_id": null,
+              "purchase_unit": null,
+              "reference_unit": null,
+              "child_count": "0"
+            }
+          }
+        },
+        "default": null,
+        "apiAlias": "cheapest_price_container"
+      },
+      "parentId": null,
+      "childCount": 0,
+      "taxId": "be613fce57654f84bee44f6f41250436",
+      "manufacturerId": null,
+      "unitId": null,
+      "active": true,
+      "displayGroup": "3ef22b6708ae104ddfe224c32321c803",
+      "manufacturerNumber": null,
+      "ean": null,
+      "sales": 0,
+      "productNumber": "SW10008",
+      "stock": 0,
+      "availableStock": 0,
+      "available": true,
+      "deliveryTimeId": null,
+      "deliveryTime": null,
+      "restockTime": null,
+      "isCloseout": false,
+      "purchaseSteps": 1,
+      "maxPurchase": null,
+      "minPurchase": 1,
+      "purchaseUnit": null,
+      "referenceUnit": null,
+      "shippingFree": false,
+      "markAsTopseller": null,
+      "weight": null,
+      "width": null,
+      "height": null,
+      "length": null,
+      "releaseDate": null,
+      "categoryTree": [
+        "7adcd0fde11e484fbec2325f91d13ef9",
+        "85a5d5fda8fb482bbcbd083c9b55f8e3"
+      ],
+      "streamIds": null,
+      "optionIds": null,
+      "propertyIds": null,
+      "name": "Testprodukt Kopie Kopie",
+      "keywords": null,
+      "description": null,
+      "metaDescription": null,
+      "metaTitle": null,
+      "packUnit": null,
+      "packUnitPlural": null,
+      "mainVariantId": null,
+      "tax": {
+        "taxRate": 19,
+        "name": "Standard rate",
+        "position": 1,
+        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+        "versionId": null,
+        "translated": [],
+        "createdAt": "2022-08-09T14:40:13.554+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "be613fce57654f84bee44f6f41250436",
+        "customFields": null,
+        "apiAlias": "tax"
+      },
+      "manufacturer": null,
+      "unit": null,
+      "cover": null,
+      "parent": null,
+      "children": null,
+      "media": null,
+      "cmsPageId": null,
+      "cmsPage": null,
+      "translations": null,
+      "categories": null,
+      "properties": null,
+      "options": [],
+      "configuratorSettings": null,
+      "categoriesRo": null,
+      "coverId": null,
+      "blacklistIds": null,
+      "whitelistIds": null,
+      "categoryIds": ["85a5d5fda8fb482bbcbd083c9b55f8e3"],
+      "productReviews": null,
+      "ratingAverage": null,
+      "mainCategories": null,
+      "seoUrls": null,
+      "crossSellings": null,
+      "canonicalProductId": null,
+      "canonicalProduct": null,
+      "streams": null,
+      "_uniqueIdentifier": "db2502260b6843168acc78cb49037e2b",
+      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+      "translated": {
+        "metaDescription": null,
+        "name": "Testprodukt Kopie Kopie",
+        "keywords": null,
+        "description": null,
+        "metaTitle": null,
+        "packUnit": null,
+        "packUnitPlural": null,
+        "customFields": {}
+      },
+      "createdAt": "2023-04-17T11:32:09.353+00:00",
+      "updatedAt": "2023-04-17T11:32:30.186+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        },
+        "search": {
+          "_uniqueIdentifier": null,
+          "translated": [],
+          "id": "db2502260b6843168acc78cb49037e2b",
+          "productNumber": "SW10008",
+          "product_number": "SW10008",
+          "autoIncrement": 86,
+          "auto_increment": 86,
+          "_score": "770",
+          "apiAlias": "array"
+        }
+      },
+      "id": "db2502260b6843168acc78cb49037e2b",
+      "customFields": {},
+      "apiAlias": "product"
+    },
+    {
+      "calculatedPrices": [],
+      "calculatedPrice": {
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_price"
+      },
+      "sortedProperties": null,
+      "calculatedCheapestPrice": {
+        "hasRange": false,
+        "unitPrice": 50,
+        "quantity": 1,
+        "totalPrice": 50,
+        "calculatedTaxes": [
+          {
+            "tax": 8.33,
+            "taxRate": 20,
+            "price": 50,
+            "apiAlias": "cart_tax_calculated"
+          }
+        ],
+        "taxRules": [
+          {
+            "taxRate": 20,
+            "percentage": 100,
+            "apiAlias": "cart_tax_rule"
+          }
+        ],
+        "referencePrice": null,
+        "listPrice": null,
+        "regulationPrice": null,
+        "apiAlias": "calculated_cheapest_price"
+      },
+      "isNew": false,
+      "calculatedMaxPurchase": 100,
+      "seoCategory": null,
+      "cheapestPriceContainer": {
+        "value": {
+          "41ee97974e6742c496abdf089bd18c60": {
+            "default": {
+              "parent_id": "41ee97974e6742c496abdf089bd18c60",
+              "variant_id": "41ee97974e6742c496abdf089bd18c60",
+              "rule_id": null,
+              "is_ranged": "0",
+              "price": {
+                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                  "net": 42.016806722689,
+                  "gross": 50,
+                  "linked": true,
+                  "listPrice": null,
+                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                  "regulationPrice": null
+                }
+              },
+              "min_purchase": "1",
+              "unit_id": null,
+              "purchase_unit": null,
+              "reference_unit": null,
+              "child_count": "0"
+            }
+          }
+        },
+        "default": null,
+        "apiAlias": "cheapest_price_container"
+      },
+      "parentId": null,
+      "childCount": 0,
+      "taxId": "be613fce57654f84bee44f6f41250436",
+      "manufacturerId": null,
+      "unitId": null,
+      "active": true,
+      "displayGroup": "e4e8bc73c9fb5c856bb5e8621f8c2af0",
+      "manufacturerNumber": null,
+      "ean": null,
+      "sales": 0,
+      "productNumber": "SW10009",
+      "stock": 0,
+      "availableStock": 0,
+      "available": true,
+      "deliveryTimeId": null,
+      "deliveryTime": null,
+      "restockTime": null,
+      "isCloseout": false,
+      "purchaseSteps": 1,
+      "maxPurchase": null,
+      "minPurchase": 1,
+      "purchaseUnit": null,
+      "referenceUnit": null,
+      "shippingFree": false,
+      "markAsTopseller": null,
+      "weight": null,
+      "width": null,
+      "height": null,
+      "length": null,
+      "releaseDate": null,
+      "categoryTree": [
+        "7adcd0fde11e484fbec2325f91d13ef9",
+        "85a5d5fda8fb482bbcbd083c9b55f8e3"
+      ],
+      "streamIds": null,
+      "optionIds": null,
+      "propertyIds": null,
+      "name": "Testprodukt Kopie Kopie Kopie",
+      "keywords": null,
+      "description": null,
+      "metaDescription": null,
+      "metaTitle": null,
+      "packUnit": null,
+      "packUnitPlural": null,
+      "mainVariantId": null,
+      "tax": {
+        "taxRate": 19,
+        "name": "Standard rate",
+        "position": 1,
+        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+        "versionId": null,
+        "translated": [],
+        "createdAt": "2022-08-09T14:40:13.554+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "be613fce57654f84bee44f6f41250436",
+        "customFields": null,
+        "apiAlias": "tax"
+      },
+      "manufacturer": null,
+      "unit": null,
+      "cover": null,
+      "parent": null,
+      "children": null,
+      "media": null,
+      "cmsPageId": null,
+      "cmsPage": null,
+      "translations": null,
+      "categories": null,
+      "properties": null,
+      "options": [],
+      "configuratorSettings": null,
+      "categoriesRo": null,
+      "coverId": null,
+      "blacklistIds": null,
+      "whitelistIds": null,
+      "categoryIds": ["85a5d5fda8fb482bbcbd083c9b55f8e3"],
+      "productReviews": null,
+      "ratingAverage": null,
+      "mainCategories": null,
+      "seoUrls": null,
+      "crossSellings": null,
+      "canonicalProductId": null,
+      "canonicalProduct": null,
+      "streams": null,
+      "_uniqueIdentifier": "41ee97974e6742c496abdf089bd18c60",
+      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+      "translated": {
+        "metaDescription": null,
+        "name": "Testprodukt Kopie Kopie Kopie",
+        "keywords": null,
+        "description": null,
+        "metaTitle": null,
+        "packUnit": null,
+        "packUnitPlural": null,
+        "customFields": {}
+      },
+      "createdAt": "2023-04-17T11:33:31.718+00:00",
+      "updatedAt": "2023-04-17T11:33:38.085+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        },
+        "search": {
+          "_uniqueIdentifier": null,
+          "translated": [],
+          "id": "41ee97974e6742c496abdf089bd18c60",
+          "productNumber": "SW10009",
+          "product_number": "SW10009",
+          "autoIncrement": 87,
+          "auto_increment": 87,
+          "_score": "770",
+          "apiAlias": "array"
+        }
+      },
+      "id": "41ee97974e6742c496abdf089bd18c60",
+      "customFields": {},
+      "apiAlias": "product"
+    }
+  ],
+  "states": [],
+  "apiAlias": "product_listing"
+}

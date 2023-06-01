@@ -1,0 +1,105 @@
+{
+  "entity": "language",
+  "total": 2,
+  "aggregations": [],
+  "page": 1,
+  "limit": 100,
+  "elements": [
+    {
+      "parentId": null,
+      "localeId": "81030b996a9545b58b350afee53aafd2",
+      "translationCodeId": "81030b996a9545b58b350afee53aafd2",
+      "translationCode": {
+        "code": "en-GB",
+        "name": "English",
+        "territory": "United Kingdom",
+        "_uniqueIdentifier": "81030b996a9545b58b350afee53aafd2",
+        "versionId": null,
+        "translated": {
+          "name": "English",
+          "territory": "United Kingdom",
+          "customFields": {}
+        },
+        "createdAt": "2022-08-09T14:40:12.507+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "81030b996a9545b58b350afee53aafd2",
+        "customFields": null,
+        "apiAlias": "locale"
+      },
+      "name": "English",
+      "locale": null,
+      "parent": null,
+      "children": null,
+      "_uniqueIdentifier": "2fbb5fe2e29a4d70aa5854ce7ce3e20b",
+      "versionId": null,
+      "translated": [],
+      "createdAt": "2022-08-09T14:40:12.514+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "2fbb5fe2e29a4d70aa5854ce7ce3e20b",
+      "customFields": null,
+      "apiAlias": "language"
+    },
+    {
+      "parentId": null,
+      "localeId": "1daa11e04927402b9f4f7ada065dbd63",
+      "translationCodeId": "1daa11e04927402b9f4f7ada065dbd63",
+      "translationCode": {
+        "code": "de-DE",
+        "name": "German",
+        "territory": "Germany",
+        "_uniqueIdentifier": "1daa11e04927402b9f4f7ada065dbd63",
+        "versionId": null,
+        "translated": {
+          "name": "German",
+          "territory": "Germany",
+          "customFields": {}
+        },
+        "createdAt": "2022-08-09T14:40:12.512+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "1daa11e04927402b9f4f7ada065dbd63",
+        "customFields": null,
+        "apiAlias": "locale"
+      },
+      "name": "Deutsch",
+      "locale": null,
+      "parent": null,
+      "children": null,
+      "_uniqueIdentifier": "e5c88e3b8ac34e399f20712084835f90",
+      "versionId": null,
+      "translated": [],
+      "createdAt": "2022-08-09T14:40:12.516+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "e5c88e3b8ac34e399f20712084835f90",
+      "customFields": null,
+      "apiAlias": "language"
+    }
+  ],
+  "states": [],
+  "apiAlias": "dal_entity_search_result"
+}

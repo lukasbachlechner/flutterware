@@ -24,14 +24,10 @@ class ProductsView extends HookConsumerWidget {
       : search = null,
         _type = ProductsViewType.byCategoryId;
 
-  Widget _buildList(
-      List<Product> products, void Function(int index) renderCallback) {
+  Widget _buildList(List<Product> products) {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) {
-          if (index + 1 == products.length) {
-            renderCallback(index);
-          }
           final product = products[index];
           return ProductListItem(
             product: product,
@@ -42,8 +38,7 @@ class ProductsView extends HookConsumerWidget {
     );
   }
 
-  Widget _buildGrid(
-      List<Product> products, void Function(int index) renderCallback) {
+  Widget _buildGrid(List<Product> products) {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) {
@@ -99,15 +94,9 @@ class ProductsView extends HookConsumerWidget {
               child: gapH24,
             ),
             if (ref.watch(productViewModeProvider) == ProductViewMode.list)
-              _buildList(
-                state.records,
-                (index) {},
-              )
+              _buildList(state.records)
             else
-              _buildGrid(
-                state.records,
-                (index) {},
-              ),
+              _buildGrid(state.records),
 
             /*  SliverVisibility(
               visible: state.hasMore,

@@ -1,0 +1,113 @@
+{
+  "entity": "payment_method",
+  "total": 3,
+  "aggregations": [],
+  "page": 1,
+  "limit": 100,
+  "elements": [
+    {
+      "name": "Invoice",
+      "distinguishableName": "Invoice",
+      "description": "Payment by invoice. Shopware provides automatic invoicing for all customers on orders after the first. This is to avoid defaults on payment.",
+      "position": 5,
+      "active": true,
+      "afterOrderEnabled": true,
+      "translations": null,
+      "mediaId": null,
+      "media": null,
+      "shortName": "invoice_payment",
+      "synchronous": true,
+      "asynchronous": false,
+      "prepared": false,
+      "refundable": false,
+      "_uniqueIdentifier": "64c0d0249b68466e9a27fb7d676fbc88",
+      "versionId": null,
+      "translated": {
+        "name": "Invoice",
+        "distinguishableName": "Invoice",
+        "description": "Payment by invoice. Shopware provides automatic invoicing for all customers on orders after the first. This is to avoid defaults on payment.",
+        "customFields": {}
+      },
+      "createdAt": "2022-08-09T14:40:13.497+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "64c0d0249b68466e9a27fb7d676fbc88",
+      "customFields": null,
+      "apiAlias": "payment_method"
+    },
+    {
+      "name": "Cash on delivery",
+      "distinguishableName": "Cash on delivery",
+      "description": "Payment upon receipt of goods.",
+      "position": 1,
+      "active": true,
+      "afterOrderEnabled": true,
+      "translations": null,
+      "mediaId": null,
+      "media": null,
+      "shortName": "cash_payment",
+      "synchronous": true,
+      "asynchronous": false,
+      "prepared": false,
+      "refundable": false,
+      "_uniqueIdentifier": "f4f553cbf003421cb9866622852a3649",
+      "versionId": null,
+      "translated": {
+        "name": "Cash on delivery",
+        "distinguishableName": "Cash on delivery",
+        "description": "Payment upon receipt of goods.",
+        "customFields": {}
+      },
+      "createdAt": "2022-08-09T14:40:13.505+00:00",
+      "updatedAt": "2022-09-12T14:49:26.666+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "f4f553cbf003421cb9866622852a3649",
+      "customFields": null,
+      "apiAlias": "payment_method"
+    },
+    {
+      "name": "Paid in advance",
+      "distinguishableName": "Paid in advance",
+      "description": "Pay in advance and get your order afterwards",
+      "position": 2,
+      "active": true,
+      "afterOrderEnabled": true,
+      "translations": null,
+      "mediaId": null,
+      "media": null,
+      "shortName": "pre_payment",
+      "synchronous": true,
+      "asynchronous": false,
+      "prepared": false,
+      "refundable": false,
+      "_uniqueIdentifier": "5fc95cc2cf4a48babfaa2d9b72d416f7",
+      "versionId": null,
+      "translated": {
+        "name": "Paid in advance",
+        "distinguishableName": "Paid in advance",
+        "description": "Pay in advance and get your order afterwards",
+        "customFields": {}
+      },
+      "createdAt": "2022-08-09T14:40:13.508+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "5fc95cc2cf4a48babfaa2d9b72d416f7",
+      "customFields": null,
+      "apiAlias": "payment_method"
+    }
+  ],
+  "states": [],
+  "apiAlias": "dal_entity_search_result"
+}

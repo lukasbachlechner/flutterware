@@ -43,11 +43,14 @@ class FwListTile extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                title,
-                style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                      color: textColor ?? AppColors.blackSecondary,
-                    ),
+              Expanded(
+                child: Text(
+                  title,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                        color: textColor ?? AppColors.blackSecondary,
+                      ),
+                ),
               ),
               trailing ??
                   Icon(

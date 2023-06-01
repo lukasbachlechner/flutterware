@@ -31,20 +31,31 @@ GlobalKey<NavigatorState> shellNavigatorKey(ShellNavigatorKeyRef ref) {
 
 final menuShellNavigatorKey = GlobalKey<NavigatorState>();
 
-@Riverpod(keepAlive: true)
-GoRouter goRouter(GoRouterRef ref) {
+GoRouter createGoRouter({
+  required GlobalKey<NavigatorState> rootNavigatorKey,
+  required GlobalKey<NavigatorState> menuShellNavigatorKey,
+  required GlobalKey<NavigatorState> shellNavigatorKey,
+  required List<NavigatorObserver> observers,
+  String? initialLocation,
+  Widget? initialLocationWidget,
+}) {
   return GoRouter(
     observers: [],
-    initialLocation: '/home',
+    initialLocation: initialLocation ?? '/home',
     navigatorKey: rootNavigatorKey,
     errorPageBuilder: (context, state) => NoTransitionPage(
       child: NotFoundScreen(error: state.error),
       key: state.pageKey,
     ),
     routes: [
+      if (initialLocation != null && initialLocationWidget != null)
+        GoRoute(
+          path: initialLocation,
+          builder: (context, state) => initialLocationWidget,
+        ),
       ShellRoute(
-        navigatorKey: ref.watch(shellNavigatorKeyProvider),
-        observers: [ref.watch(appRouteObserverProvider)],
+        navigatorKey: shellNavigatorKey,
+        observers: observers,
         pageBuilder: (context, state, child) => NoTransitionPage(
           child: AppShell(child: child),
           key: state.pageKey,
@@ -60,7 +71,7 @@ GoRouter goRouter(GoRouterRef ref) {
                 GoRoute(
                   path: SingleProductScreen.path,
                   name: SingleProductScreen.name,
-                  parentNavigatorKey: ref.watch(shellNavigatorKeyProvider),
+                  parentNavigatorKey: shellNavigatorKey,
                   builder: (context, state) => SingleProductScreen(
                     productId: ID(state.params['productId']!),
                   ),
@@ -109,13 +120,13 @@ GoRouter goRouter(GoRouterRef ref) {
           GoRoute(
             path: CartScreen.path,
             name: CartScreen.name,
-            parentNavigatorKey: ref.watch(shellNavigatorKeyProvider),
+            parentNavigatorKey: shellNavigatorKey,
             builder: (context, state) => const CartScreen(),
           ),
           GoRoute(
             path: SearchScreen.path,
             name: SearchScreen.name,
-            parentNavigatorKey: ref.watch(shellNavigatorKeyProvider),
+            parentNavigatorKey: shellNavigatorKey,
             pageBuilder: (BuildContext context, GoRouterState state) {
               return SearchPage(
                 key: state.pageKey,
@@ -152,6 +163,18 @@ GoRouter goRouter(GoRouterRef ref) {
         parentNavigatorKey: rootNavigatorKey,
         builder: (context, state) => const CheckoutConfirmationScreen(),
       ),
+    ],
+  );
+}
+
+@Riverpod(keepAlive: true)
+GoRouter goRouter(GoRouterRef ref) {
+  return createGoRouter(
+    rootNavigatorKey: rootNavigatorKey,
+    menuShellNavigatorKey: menuShellNavigatorKey,
+    shellNavigatorKey: ref.watch(shellNavigatorKeyProvider),
+    observers: [
+      ref.watch(appRouteObserverProvider),
     ],
   );
 }

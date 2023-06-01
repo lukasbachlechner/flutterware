@@ -1,3 +1,4 @@
+// coverage:ignore-file
 import 'package:flutterware/src/features/global/data/validators/validators.dart';
 
 mixin EmailAndPasswordValidators {

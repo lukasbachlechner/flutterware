@@ -1,5 +1,4 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:shopware6_client/shopware6_client.dart';
 
@@ -26,9 +25,8 @@ class ProductsViewFilterState {
               .label ??
           '';
     } catch (e) {
-      debugPrint(e.toString());
+      return '';
     }
-    return '';
   }
 
   String labelForOptionGroup(ID groupId) {
@@ -47,10 +45,8 @@ class ProductsViewFilterState {
 
       return selectedOptionNames.map((option) => option.name).join(', ');
     } catch (e) {
-      debugPrint(e.toString());
+      return '';
     }
-
-    return '';
   }
 
   String transformToString(Iterable iterable) {

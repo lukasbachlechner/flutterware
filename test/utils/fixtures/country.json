@@ -1,0 +1,75 @@
+{
+  "entity": "country",
+  "total": 1,
+  "aggregations": [],
+  "page": 1,
+  "limit": 100,
+  "elements": [
+    {
+      "name": "Austria",
+      "iso": "AT",
+      "position": 10,
+      "taxFree": false,
+      "active": true,
+      "shippingAvailable": true,
+      "iso3": "AUT",
+      "displayStateInRegistration": false,
+      "forceStateInRegistration": false,
+      "companyTaxFree": false,
+      "checkVatIdPattern": false,
+      "vatIdPattern": "(AT)?U[0-9]{8}",
+      "vatIdRequired": false,
+      "customerTax": {
+        "enabled": false,
+        "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+        "amount": 0,
+        "apiAlias": "shopware_core_framework_data_abstraction_layer_tax_free_config"
+      },
+      "companyTax": {
+        "enabled": false,
+        "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+        "amount": 0,
+        "apiAlias": "shopware_core_framework_data_abstraction_layer_tax_free_config"
+      },
+      "states": null,
+      "translations": null,
+      "postalCodeRequired": false,
+      "checkPostalCodePattern": false,
+      "checkAdvancedPostalCodePattern": false,
+      "advancedPostalCodePattern": null,
+      "defaultPostalCodePattern": "\\d{4}",
+      "addressFormat": [
+        ["address/company", "symbol/dash", "address/department"],
+        ["address/first_name", "address/last_name"],
+        ["address/street"],
+        ["address/zipcode", "address/city"],
+        ["address/country"]
+      ],
+      "_uniqueIdentifier": "5a0931b886ad4d2d9ffb4e70ffbb8081",
+      "versionId": null,
+      "translated": {
+        "name": "Austria",
+        "customFields": {},
+        "addressFormat": [
+          ["address/company", "symbol/dash", "address/department"],
+          ["address/first_name", "address/last_name"],
+          ["address/street"],
+          ["address/zipcode", "address/city"],
+          ["address/country"]
+        ]
+      },
+      "createdAt": "2022-08-09T14:40:13.281+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "5a0931b886ad4d2d9ffb4e70ffbb8081",
+      "customFields": null,
+      "apiAlias": "country"
+    }
+  ],
+  "states": [],
+  "apiAlias": "dal_entity_search_result"
+}

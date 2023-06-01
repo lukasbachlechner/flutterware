@@ -1,0 +1,1322 @@
+{
+  "afterCategoryId": "828869800da442e7a70877852afc39f3",
+  "parentId": null,
+  "mediaId": null,
+  "name": "Main",
+  "breadcrumb": ["Main"],
+  "path": null,
+  "level": 1,
+  "active": true,
+  "childCount": 5,
+  "visibleChildCount": 0,
+  "displayNestedProducts": true,
+  "parent": null,
+  "children": null,
+  "translations": null,
+  "media": null,
+  "cmsPageId": "695477e02ef643e5a016b83ed4cdf63a",
+  "cmsPageIdSwitched": false,
+  "cmsPage": {
+    "name": "Homepage",
+    "type": "landingpage",
+    "entity": null,
+    "sections": [
+      {
+        "type": "default",
+        "blocks": [
+          {
+            "type": "image-cover",
+            "slots": [
+              {
+                "type": "image",
+                "slot": "image",
+                "block": null,
+                "blockId": "4a91632ed0b7498fb86057ae247ed5e5",
+                "config": {
+                  "url": {
+                    "value": null,
+                    "source": "static"
+                  },
+                  "media": {
+                    "value": "de4b7dbe9d95435092cb85ce146ced28",
+                    "source": "static"
+                  },
+                  "newTab": {
+                    "value": false,
+                    "source": "static"
+                  },
+                  "minHeight": {
+                    "value": "340px",
+                    "source": "static"
+                  },
+                  "displayMode": {
+                    "value": "standard",
+                    "source": "static"
+                  },
+                  "verticalAlign": {
+                    "value": null,
+                    "source": "static"
+                  }
+                },
+                "fieldConfig": [
+                  {
+                    "name": "url",
+                    "source": "static",
+                    "value": null,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "media",
+                    "source": "static",
+                    "value": "de4b7dbe9d95435092cb85ce146ced28",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "newTab",
+                    "source": "static",
+                    "value": false,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "minHeight",
+                    "source": "static",
+                    "value": "340px",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "displayMode",
+                    "source": "static",
+                    "value": "standard",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "verticalAlign",
+                    "source": "static",
+                    "value": null,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  }
+                ],
+                "translations": null,
+                "data": {
+                  "mediaId": "de4b7dbe9d95435092cb85ce146ced28",
+                  "url": "",
+                  "newTab": false,
+                  "media": {
+                    "mimeType": "image/jpeg",
+                    "fileExtension": "jpg",
+                    "fileSize": 178768,
+                    "title": null,
+                    "metaData": {
+                      "type": 2,
+                      "width": 1280,
+                      "height": 528
+                    },
+                    "uploadedAt": "2022-08-09T14:42:52.436+00:00",
+                    "alt": null,
+                    "url": "http://localhost/media/64/f8/a9/1660056172/hq_1280x1280.jpg",
+                    "fileName": "hq_1280x1280",
+                    "translations": null,
+                    "thumbnails": [
+                      {
+                        "width": 800,
+                        "height": 800,
+                        "url": "http://localhost/thumbnail/64/f8/a9/1660056172/hq_1280x1280_800x800.jpg",
+                        "mediaId": "de4b7dbe9d95435092cb85ce146ced28",
+                        "_uniqueIdentifier": "5aa8df9152f64af6954d74e443fb2ba5",
+                        "versionId": null,
+                        "translated": [],
+                        "createdAt": "2022-09-05T17:31:32.527+00:00",
+                        "updatedAt": null,
+                        "extensions": {
+                          "foreignKeys": {
+                            "apiAlias": "array_struct"
+                          }
+                        },
+                        "id": "5aa8df9152f64af6954d74e443fb2ba5",
+                        "customFields": null,
+                        "apiAlias": "media_thumbnail"
+                      },
+                      {
+                        "width": 400,
+                        "height": 400,
+                        "url": "http://localhost/thumbnail/64/f8/a9/1660056172/hq_1280x1280_400x400.jpg",
+                        "mediaId": "de4b7dbe9d95435092cb85ce146ced28",
+                        "_uniqueIdentifier": "83fe24ce0c6e41229dd2065499e9c507",
+                        "versionId": null,
+                        "translated": [],
+                        "createdAt": "2022-09-05T17:31:32.527+00:00",
+                        "updatedAt": null,
+                        "extensions": {
+                          "foreignKeys": {
+                            "apiAlias": "array_struct"
+                          }
+                        },
+                        "id": "83fe24ce0c6e41229dd2065499e9c507",
+                        "customFields": null,
+                        "apiAlias": "media_thumbnail"
+                      },
+                      {
+                        "width": 1920,
+                        "height": 1920,
+                        "url": "http://localhost/thumbnail/64/f8/a9/1660056172/hq_1280x1280_1920x1920.jpg",
+                        "mediaId": "de4b7dbe9d95435092cb85ce146ced28",
+                        "_uniqueIdentifier": "b16008fefc8846d6a93b6220d16ea2e7",
+                        "versionId": null,
+                        "translated": [],
+                        "createdAt": "2022-09-05T17:31:32.527+00:00",
+                        "updatedAt": null,
+                        "extensions": {
+                          "foreignKeys": {
+                            "apiAlias": "array_struct"
+                          }
+                        },
+                        "id": "b16008fefc8846d6a93b6220d16ea2e7",
+                        "customFields": null,
+                        "apiAlias": "media_thumbnail"
+                      }
+                    ],
+                    "hasFile": true,
+                    "private": false,
+                    "_uniqueIdentifier": "de4b7dbe9d95435092cb85ce146ced28",
+                    "versionId": null,
+                    "translated": {
+                      "alt": null,
+                      "title": null,
+                      "customFields": {}
+                    },
+                    "createdAt": "2022-08-09T14:42:51.944+00:00",
+                    "updatedAt": "2022-08-09T14:42:52.442+00:00",
+                    "extensions": {
+                      "foreignKeys": {
+                        "apiAlias": "array_struct"
+                      }
+                    },
+                    "id": "de4b7dbe9d95435092cb85ce146ced28",
+                    "customFields": null,
+                    "apiAlias": "media"
+                  },
+                  "apiAlias": "cms_image"
+                },
+                "locked": false,
+                "cmsBlockVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "_uniqueIdentifier": "9e2f55fac84647098fe5b0f17ee4786f",
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "translated": {
+                  "config": {
+                    "url": {
+                      "value": null,
+                      "source": "static"
+                    },
+                    "media": {
+                      "value": "de4b7dbe9d95435092cb85ce146ced28",
+                      "source": "static"
+                    },
+                    "newTab": {
+                      "value": false,
+                      "source": "static"
+                    },
+                    "minHeight": {
+                      "value": "340px",
+                      "source": "static"
+                    },
+                    "displayMode": {
+                      "value": "standard",
+                      "source": "static"
+                    },
+                    "verticalAlign": {
+                      "value": null,
+                      "source": "static"
+                    }
+                  },
+                  "customFields": {}
+                },
+                "createdAt": "2022-08-09T14:42:52.583+00:00",
+                "updatedAt": "2022-09-12T14:16:47.724+00:00",
+                "extensions": {
+                  "foreignKeys": {
+                    "apiAlias": "array_struct"
+                  }
+                },
+                "customFields": null,
+                "apiAlias": "cms_slot"
+              }
+            ],
+            "sectionId": "935477e02ef643e5a016b83ed4cdf63a",
+            "position": 0,
+            "name": null,
+            "sectionPosition": "main",
+            "marginTop": null,
+            "marginBottom": null,
+            "marginLeft": null,
+            "marginRight": null,
+            "backgroundColor": null,
+            "backgroundMediaId": null,
+            "backgroundMedia": null,
+            "backgroundMediaMode": "cover",
+            "cssClass": null,
+            "cmsSectionVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "_uniqueIdentifier": "4a91632ed0b7498fb86057ae247ed5e5",
+            "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "translated": [],
+            "createdAt": "2022-08-09T14:42:52.594+00:00",
+            "updatedAt": "2022-09-12T14:16:47.726+00:00",
+            "extensions": {
+              "foreignKeys": {
+                "apiAlias": "array_struct"
+              }
+            },
+            "customFields": null,
+            "apiAlias": "cms_block"
+          }
+        ],
+        "pageId": "695477e02ef643e5a016b83ed4cdf63a",
+        "page": null,
+        "position": 0,
+        "name": null,
+        "sizingMode": "boxed",
+        "mobileBehavior": "wrap",
+        "backgroundColor": null,
+        "backgroundMediaId": null,
+        "backgroundMedia": null,
+        "backgroundMediaMode": "cover",
+        "cssClass": null,
+        "cmsPageVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+        "_uniqueIdentifier": "935477e02ef643e5a016b83ed4cdf63a",
+        "translated": [],
+        "createdAt": "2022-08-09T14:42:52.594+00:00",
+        "updatedAt": "2022-09-12T14:16:47.726+00:00",
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "customFields": null,
+        "apiAlias": "cms_section"
+      },
+      {
+        "type": "default",
+        "blocks": [
+          {
+            "type": "text",
+            "slots": [
+              {
+                "type": "text",
+                "slot": "content",
+                "block": null,
+                "blockId": "2c485d48d7374d8ca38f034124541f7c",
+                "config": {
+                  "content": {
+                    "value": "<h1>Neu</h1>",
+                    "source": "static"
+                  },
+                  "verticalAlign": {
+                    "value": null,
+                    "source": "static"
+                  }
+                },
+                "fieldConfig": [
+                  {
+                    "name": "content",
+                    "source": "static",
+                    "value": "<h1>Neu</h1>",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "verticalAlign",
+                    "source": "static",
+                    "value": null,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  }
+                ],
+                "translations": null,
+                "data": {
+                  "content": "<h1>Neu</h1>",
+                  "apiAlias": "cms_text"
+                },
+                "locked": false,
+                "cmsBlockVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "_uniqueIdentifier": "b90e7e56ba72426a80376af725ca0b8e",
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "translated": {
+                  "config": {
+                    "content": {
+                      "value": "<h1>Neu</h1>",
+                      "source": "static"
+                    },
+                    "verticalAlign": {
+                      "value": null,
+                      "source": "static"
+                    }
+                  },
+                  "customFields": {}
+                },
+                "createdAt": "2023-02-17T13:48:58.412+00:00",
+                "updatedAt": null,
+                "extensions": {
+                  "foreignKeys": {
+                    "apiAlias": "array_struct"
+                  }
+                },
+                "customFields": null,
+                "apiAlias": "cms_slot"
+              }
+            ],
+            "sectionId": "c49459129eab4140a2484e31709ea94a",
+            "position": 0,
+            "name": null,
+            "sectionPosition": "main",
+            "marginTop": "20px",
+            "marginBottom": "20px",
+            "marginLeft": "20px",
+            "marginRight": "20px",
+            "backgroundColor": null,
+            "backgroundMediaId": null,
+            "backgroundMedia": null,
+            "backgroundMediaMode": "cover",
+            "cssClass": null,
+            "cmsSectionVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "_uniqueIdentifier": "2c485d48d7374d8ca38f034124541f7c",
+            "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "translated": [],
+            "createdAt": "2023-02-17T13:48:58.414+00:00",
+            "updatedAt": null,
+            "extensions": {
+              "foreignKeys": {
+                "apiAlias": "array_struct"
+              }
+            },
+            "customFields": null,
+            "apiAlias": "cms_block"
+          },
+          {
+            "type": "product-slider",
+            "slots": [
+              {
+                "type": "product-slider",
+                "slot": "productSlider",
+                "block": null,
+                "blockId": "5251a391567f4ba882bcf7d8bc9c8bbd",
+                "config": {
+                  "title": {
+                    "value": "Neu",
+                    "source": "static"
+                  },
+                  "border": {
+                    "value": false,
+                    "source": "static"
+                  },
+                  "rotate": {
+                    "value": false,
+                    "source": "static"
+                  },
+                  "products": {
+                    "value": "8899998ba12e498b992b2a51ea321247",
+                    "source": "product_stream"
+                  },
+                  "boxLayout": {
+                    "value": "standard",
+                    "source": "static"
+                  },
+                  "elMinWidth": {
+                    "value": "300px",
+                    "source": "static"
+                  },
+                  "navigation": {
+                    "value": true,
+                    "source": "static"
+                  },
+                  "displayMode": {
+                    "value": "standard",
+                    "source": "static"
+                  },
+                  "verticalAlign": {
+                    "value": null,
+                    "source": "static"
+                  },
+                  "productStreamLimit": {
+                    "value": 10,
+                    "source": "static"
+                  },
+                  "productStreamSorting": {
+                    "value": "name:ASC",
+                    "source": "static"
+                  }
+                },
+                "fieldConfig": [
+                  {
+                    "name": "title",
+                    "source": "static",
+                    "value": "Neu",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "border",
+                    "source": "static",
+                    "value": false,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "rotate",
+                    "source": "static",
+                    "value": false,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "products",
+                    "source": "product_stream",
+                    "value": "8899998ba12e498b992b2a51ea321247",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "boxLayout",
+                    "source": "static",
+                    "value": "standard",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "elMinWidth",
+                    "source": "static",
+                    "value": "300px",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "navigation",
+                    "source": "static",
+                    "value": true,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "displayMode",
+                    "source": "static",
+                    "value": "standard",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "verticalAlign",
+                    "source": "static",
+                    "value": null,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "productStreamLimit",
+                    "source": "static",
+                    "value": 10,
+                    "apiAlias": "cms_data_resolver_field_config"
+                  },
+                  {
+                    "name": "productStreamSorting",
+                    "source": "static",
+                    "value": "name:ASC",
+                    "apiAlias": "cms_data_resolver_field_config"
+                  }
+                ],
+                "translations": null,
+                "data": {
+                  "products": [
+                    {
+                      "calculatedPrices": [],
+                      "calculatedPrice": {
+                        "unitPrice": 11,
+                        "quantity": 1,
+                        "totalPrice": 11,
+                        "calculatedTaxes": [
+                          {
+                            "tax": 1.83,
+                            "taxRate": 20,
+                            "price": 11,
+                            "apiAlias": "cart_tax_calculated"
+                          }
+                        ],
+                        "taxRules": [
+                          {
+                            "taxRate": 20,
+                            "percentage": 100,
+                            "apiAlias": "cart_tax_rule"
+                          }
+                        ],
+                        "referencePrice": null,
+                        "listPrice": null,
+                        "regulationPrice": null,
+                        "apiAlias": "calculated_price"
+                      },
+                      "sortedProperties": null,
+                      "calculatedCheapestPrice": {
+                        "hasRange": false,
+                        "unitPrice": 11,
+                        "quantity": 1,
+                        "totalPrice": 11,
+                        "calculatedTaxes": [
+                          {
+                            "tax": 1.83,
+                            "taxRate": 20,
+                            "price": 11,
+                            "apiAlias": "cart_tax_calculated"
+                          }
+                        ],
+                        "taxRules": [
+                          {
+                            "taxRate": 20,
+                            "percentage": 100,
+                            "apiAlias": "cart_tax_rule"
+                          }
+                        ],
+                        "referencePrice": null,
+                        "listPrice": null,
+                        "regulationPrice": null,
+                        "apiAlias": "calculated_cheapest_price"
+                      },
+                      "isNew": false,
+                      "calculatedMaxPurchase": 100,
+                      "seoCategory": null,
+                      "cheapestPriceContainer": {
+                        "value": {
+                          "20f1ad86738342209353e024d1b89108": {
+                            "default": {
+                              "parent_id": "20f1ad86738342209353e024d1b89108",
+                              "variant_id": "20f1ad86738342209353e024d1b89108",
+                              "rule_id": null,
+                              "is_ranged": "0",
+                              "price": {
+                                "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                                  "net": 9.2436974789916,
+                                  "gross": 11,
+                                  "linked": true,
+                                  "listPrice": null,
+                                  "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                                  "regulationPrice": null
+                                }
+                              },
+                              "min_purchase": "1",
+                              "unit_id": null,
+                              "purchase_unit": null,
+                              "reference_unit": null,
+                              "child_count": "0"
+                            }
+                          }
+                        },
+                        "default": null,
+                        "apiAlias": "cheapest_price_container"
+                      },
+                      "parentId": null,
+                      "childCount": 0,
+                      "taxId": "be613fce57654f84bee44f6f41250436",
+                      "manufacturerId": null,
+                      "unitId": null,
+                      "active": true,
+                      "displayGroup": "148c7c5e5f61f3b6d99358b7fa25cec5",
+                      "manufacturerNumber": null,
+                      "ean": null,
+                      "sales": 0,
+                      "productNumber": "SW10004",
+                      "stock": 0,
+                      "availableStock": 0,
+                      "available": true,
+                      "deliveryTimeId": null,
+                      "deliveryTime": null,
+                      "restockTime": null,
+                      "isCloseout": false,
+                      "purchaseSteps": 1,
+                      "maxPurchase": null,
+                      "minPurchase": 1,
+                      "purchaseUnit": null,
+                      "referenceUnit": null,
+                      "shippingFree": false,
+                      "markAsTopseller": null,
+                      "weight": null,
+                      "width": null,
+                      "height": null,
+                      "length": null,
+                      "releaseDate": null,
+                      "categoryTree": [
+                        "7adcd0fde11e484fbec2325f91d13ef9",
+                        "32d08f20c31241e585a805c28bdf8dd6",
+                        "2583f86071e748bebb13bc04da99d320"
+                      ],
+                      "streamIds": ["8899998ba12e498b992b2a51ea321247"],
+                      "optionIds": null,
+                      "propertyIds": ["ad735af1ebfb421e93e408b073c4a89a"],
+                      "name": "Another cheap shit ",
+                      "keywords": null,
+                      "description": null,
+                      "metaDescription": null,
+                      "metaTitle": null,
+                      "packUnit": null,
+                      "packUnitPlural": null,
+                      "mainVariantId": null,
+                      "tax": {
+                        "taxRate": 19,
+                        "name": "Standard rate",
+                        "position": 1,
+                        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+                        "versionId": null,
+                        "translated": [],
+                        "createdAt": "2022-08-09T14:40:13.554+00:00",
+                        "updatedAt": null,
+                        "extensions": {
+                          "foreignKeys": {
+                            "apiAlias": "array_struct"
+                          },
+                          "internal_mapping_storage": {
+                            "apiAlias": "array_struct"
+                          }
+                        },
+                        "id": "be613fce57654f84bee44f6f41250436",
+                        "customFields": null,
+                        "apiAlias": "tax"
+                      },
+                      "manufacturer": null,
+                      "unit": null,
+                      "cover": null,
+                      "parent": null,
+                      "children": null,
+                      "media": null,
+                      "cmsPageId": null,
+                      "cmsPage": null,
+                      "translations": null,
+                      "categories": null,
+                      "properties": null,
+                      "options": [],
+                      "configuratorSettings": null,
+                      "categoriesRo": null,
+                      "coverId": null,
+                      "blacklistIds": null,
+                      "whitelistIds": null,
+                      "categoryIds": ["2583f86071e748bebb13bc04da99d320"],
+                      "productReviews": null,
+                      "ratingAverage": null,
+                      "mainCategories": null,
+                      "seoUrls": null,
+                      "crossSellings": null,
+                      "canonicalProductId": null,
+                      "canonicalProduct": null,
+                      "streams": null,
+                      "_uniqueIdentifier": "20f1ad86738342209353e024d1b89108",
+                      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                      "translated": {
+                        "metaDescription": null,
+                        "name": "Another cheap shit ",
+                        "keywords": null,
+                        "description": null,
+                        "metaTitle": null,
+                        "packUnit": null,
+                        "packUnitPlural": null,
+                        "customFields": {
+                          "custom_datasheet_pdf": "6a7e930b5f3841a88c603fa35b0d9003"
+                        }
+                      },
+                      "createdAt": "2023-01-30T16:08:25.318+00:00",
+                      "updatedAt": "2023-02-17T13:05:23.309+00:00",
+                      "extensions": {
+                        "foreignKeys": {
+                          "apiAlias": "array_struct"
+                        },
+                        "search": {
+                          "_uniqueIdentifier": null,
+                          "translated": [],
+                          "productNumber": "SW10004",
+                          "product_number": "SW10004",
+                          "autoIncrement": 80,
+                          "auto_increment": 80,
+                          "apiAlias": "array"
+                        }
+                      },
+                      "id": "20f1ad86738342209353e024d1b89108",
+                      "customFields": {
+                        "custom_datasheet_pdf": "6a7e930b5f3841a88c603fa35b0d9003"
+                      },
+                      "apiAlias": "product"
+                    },
+                    {
+                      "calculatedPrices": [],
+                      "calculatedPrice": {
+                        "unitPrice": 30,
+                        "quantity": 1,
+                        "totalPrice": 30,
+                        "calculatedTaxes": [
+                          {
+                            "tax": 5,
+                            "taxRate": 20,
+                            "price": 30,
+                            "apiAlias": "cart_tax_calculated"
+                          }
+                        ],
+                        "taxRules": [
+                          {
+                            "taxRate": 20,
+                            "percentage": 100,
+                            "apiAlias": "cart_tax_rule"
+                          }
+                        ],
+                        "referencePrice": null,
+                        "listPrice": {
+                          "price": 50,
+                          "discount": -20,
+                          "percentage": 40,
+                          "apiAlias": "cart_list_price"
+                        },
+                        "regulationPrice": null,
+                        "apiAlias": "calculated_price"
+                      },
+                      "sortedProperties": null,
+                      "calculatedCheapestPrice": {
+                        "hasRange": false,
+                        "unitPrice": 30,
+                        "quantity": 1,
+                        "totalPrice": 30,
+                        "calculatedTaxes": [
+                          {
+                            "tax": 5,
+                            "taxRate": 20,
+                            "price": 30,
+                            "apiAlias": "cart_tax_calculated"
+                          }
+                        ],
+                        "taxRules": [
+                          {
+                            "taxRate": 20,
+                            "percentage": 100,
+                            "apiAlias": "cart_tax_rule"
+                          }
+                        ],
+                        "referencePrice": null,
+                        "listPrice": {
+                          "price": 50,
+                          "discount": -20,
+                          "percentage": 40,
+                          "apiAlias": "cart_list_price"
+                        },
+                        "regulationPrice": null,
+                        "apiAlias": "calculated_cheapest_price"
+                      },
+                      "isNew": false,
+                      "calculatedMaxPurchase": 100,
+                      "seoCategory": null,
+                      "cheapestPriceContainer": {
+                        "value": {
+                          "176b6c013f5b4ac7a6bb13219a2fd969": {
+                            "default": null
+                          },
+                          "4934085aa3914331bf608ceec6e4f9ec": {
+                            "default": null
+                          },
+                          "ecc49e30dae846089d88c8fc492614c9": {
+                            "default": null
+                          },
+                          "f18a391836f948848400c41b97f51f60": {
+                            "default": null
+                          }
+                        },
+                        "default": {
+                          "parent_id": "4d9a7617e875400a9f1a9d041321a529",
+                          "variant_id": "4d9a7617e875400a9f1a9d041321a529",
+                          "rule_id": null,
+                          "is_ranged": "0",
+                          "price": {
+                            "cb7d2554b0ce847cd82f3ac9bd1c0dfca": {
+                              "net": 25.210084033613,
+                              "gross": 30,
+                              "linked": true,
+                              "listPrice": {
+                                "net": 42.016806722689,
+                                "gross": 50,
+                                "linked": true,
+                                "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca"
+                              },
+                              "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                              "percentage": {
+                                "net": 40,
+                                "gross": 40
+                              },
+                              "regulationPrice": null
+                            }
+                          },
+                          "min_purchase": "1",
+                          "unit_id": null,
+                          "purchase_unit": null,
+                          "reference_unit": null,
+                          "child_count": "4"
+                        },
+                        "apiAlias": "cheapest_price_container"
+                      },
+                      "parentId": "4d9a7617e875400a9f1a9d041321a529",
+                      "childCount": null,
+                      "taxId": "be613fce57654f84bee44f6f41250436",
+                      "manufacturerId": null,
+                      "unitId": null,
+                      "active": true,
+                      "displayGroup": "86119519bbb460cadcb2f0c54acd4135",
+                      "manufacturerNumber": null,
+                      "ean": "1010161",
+                      "sales": 0,
+                      "productNumber": "SW10000.3",
+                      "stock": 0,
+                      "availableStock": -3,
+                      "available": true,
+                      "deliveryTimeId": null,
+                      "deliveryTime": null,
+                      "restockTime": null,
+                      "isCloseout": false,
+                      "purchaseSteps": 1,
+                      "maxPurchase": null,
+                      "minPurchase": 1,
+                      "purchaseUnit": null,
+                      "referenceUnit": null,
+                      "shippingFree": false,
+                      "markAsTopseller": null,
+                      "weight": null,
+                      "width": null,
+                      "height": null,
+                      "length": null,
+                      "releaseDate": null,
+                      "categoryTree": [
+                        "7adcd0fde11e484fbec2325f91d13ef9",
+                        "32d08f20c31241e585a805c28bdf8dd6",
+                        "2583f86071e748bebb13bc04da99d320"
+                      ],
+                      "streamIds": ["8899998ba12e498b992b2a51ea321247"],
+                      "optionIds": ["54147692cbfb43419a6d11e26cad44dc"],
+                      "propertyIds": [
+                        "78c53f3f6dd14eb4927978415bfb74db",
+                        "ad735af1ebfb421e93e408b073c4a89a"
+                      ],
+                      "name": null,
+                      "keywords": null,
+                      "description": null,
+                      "metaDescription": null,
+                      "metaTitle": null,
+                      "packUnit": null,
+                      "packUnitPlural": null,
+                      "mainVariantId": null,
+                      "tax": {
+                        "taxRate": 19,
+                        "name": "Standard rate",
+                        "position": 1,
+                        "_uniqueIdentifier": "be613fce57654f84bee44f6f41250436",
+                        "versionId": null,
+                        "translated": [],
+                        "createdAt": "2022-08-09T14:40:13.554+00:00",
+                        "updatedAt": null,
+                        "extensions": {
+                          "foreignKeys": {
+                            "apiAlias": "array_struct"
+                          },
+                          "internal_mapping_storage": {
+                            "apiAlias": "array_struct"
+                          }
+                        },
+                        "id": "be613fce57654f84bee44f6f41250436",
+                        "customFields": null,
+                        "apiAlias": "tax"
+                      },
+                      "manufacturer": null,
+                      "unit": null,
+                      "cover": {
+                        "productId": "4d9a7617e875400a9f1a9d041321a529",
+                        "mediaId": "c5d573f294f142478813b2db3fff2e0a",
+                        "position": 0,
+                        "media": {
+                          "mimeType": "image/jpeg",
+                          "fileExtension": "jpg",
+                          "fileSize": 28183,
+                          "title": null,
+                          "metaData": {
+                            "hash": "ddb787bf710f6387d55680d1f7e2b2d9",
+                            "type": 2,
+                            "width": 997,
+                            "height": 1080
+                          },
+                          "uploadedAt": "2022-12-20T17:03:41.782+00:00",
+                          "alt": null,
+                          "url": "http://localhost/media/15/b2/5d/1671555821/barista-unisex.jpg",
+                          "fileName": "barista-unisex",
+                          "translations": null,
+                          "thumbnails": [
+                            {
+                              "width": 800,
+                              "height": 800,
+                              "url": "http://localhost/thumbnail/15/b2/5d/1671555821/barista-unisex_800x800.jpg",
+                              "mediaId": "c5d573f294f142478813b2db3fff2e0a",
+                              "_uniqueIdentifier": "1094081ff7864e2fb672052e28f343d2",
+                              "versionId": null,
+                              "translated": [],
+                              "createdAt": "2022-12-20T17:03:42.688+00:00",
+                              "updatedAt": null,
+                              "extensions": {
+                                "foreignKeys": {
+                                  "apiAlias": "array_struct"
+                                }
+                              },
+                              "id": "1094081ff7864e2fb672052e28f343d2",
+                              "customFields": null,
+                              "apiAlias": "media_thumbnail"
+                            },
+                            {
+                              "width": 1920,
+                              "height": 1920,
+                              "url": "http://localhost/thumbnail/15/b2/5d/1671555821/barista-unisex_1920x1920.jpg",
+                              "mediaId": "c5d573f294f142478813b2db3fff2e0a",
+                              "_uniqueIdentifier": "c143e72bcad04048aecb13f7b627e348",
+                              "versionId": null,
+                              "translated": [],
+                              "createdAt": "2022-12-20T17:03:42.688+00:00",
+                              "updatedAt": null,
+                              "extensions": {
+                                "foreignKeys": {
+                                  "apiAlias": "array_struct"
+                                }
+                              },
+                              "id": "c143e72bcad04048aecb13f7b627e348",
+                              "customFields": null,
+                              "apiAlias": "media_thumbnail"
+                            },
+                            {
+                              "width": 400,
+                              "height": 400,
+                              "url": "http://localhost/thumbnail/15/b2/5d/1671555821/barista-unisex_400x400.jpg",
+                              "mediaId": "c5d573f294f142478813b2db3fff2e0a",
+                              "_uniqueIdentifier": "eef98ac23e0644ed8c11c6bcd132d886",
+                              "versionId": null,
+                              "translated": [],
+                              "createdAt": "2022-12-20T17:03:42.688+00:00",
+                              "updatedAt": null,
+                              "extensions": {
+                                "foreignKeys": {
+                                  "apiAlias": "array_struct"
+                                }
+                              },
+                              "id": "eef98ac23e0644ed8c11c6bcd132d886",
+                              "customFields": null,
+                              "apiAlias": "media_thumbnail"
+                            }
+                          ],
+                          "hasFile": true,
+                          "private": false,
+                          "_uniqueIdentifier": "c5d573f294f142478813b2db3fff2e0a",
+                          "versionId": null,
+                          "translated": {
+                            "alt": null,
+                            "title": null,
+                            "customFields": {}
+                          },
+                          "createdAt": "2022-12-20T17:03:41.720+00:00",
+                          "updatedAt": "2022-12-20T17:03:41.784+00:00",
+                          "extensions": {
+                            "foreignKeys": {
+                              "apiAlias": "array_struct"
+                            },
+                            "internal_mapping_storage": {
+                              "apiAlias": "array_struct"
+                            }
+                          },
+                          "id": "c5d573f294f142478813b2db3fff2e0a",
+                          "customFields": null,
+                          "apiAlias": "media"
+                        },
+                        "_uniqueIdentifier": "1c2b66d391b349c289178a192f899354",
+                        "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                        "translated": [],
+                        "createdAt": "2022-12-20T17:03:59.095+00:00",
+                        "updatedAt": null,
+                        "extensions": {
+                          "foreignKeys": {
+                            "apiAlias": "array_struct"
+                          }
+                        },
+                        "id": "1c2b66d391b349c289178a192f899354",
+                        "customFields": null,
+                        "apiAlias": "product_media"
+                      },
+                      "parent": null,
+                      "children": null,
+                      "media": null,
+                      "cmsPageId": null,
+                      "cmsPage": null,
+                      "translations": null,
+                      "categories": null,
+                      "properties": null,
+                      "options": [
+                        {
+                          "groupId": "75f353b589d04bf48e8a9ab1f5422b0e",
+                          "name": "L",
+                          "position": 3,
+                          "colorHexCode": null,
+                          "mediaId": null,
+                          "group": {
+                            "name": "Size",
+                            "displayType": "text",
+                            "sortingType": "alphanumeric",
+                            "description": null,
+                            "position": 1,
+                            "filterable": true,
+                            "visibleOnProductDetailPage": true,
+                            "options": null,
+                            "_uniqueIdentifier": "75f353b589d04bf48e8a9ab1f5422b0e",
+                            "versionId": null,
+                            "translated": {
+                              "name": "Size",
+                              "description": null,
+                              "position": 1,
+                              "customFields": {}
+                            },
+                            "createdAt": "2022-08-09T14:43:00.172+00:00",
+                            "updatedAt": "2023-01-14T20:42:41.134+00:00",
+                            "extensions": {
+                              "foreignKeys": {
+                                "apiAlias": "array_struct"
+                              },
+                              "internal_mapping_storage": {
+                                "apiAlias": "array_struct"
+                              }
+                            },
+                            "id": "75f353b589d04bf48e8a9ab1f5422b0e",
+                            "customFields": null,
+                            "apiAlias": "property_group"
+                          },
+                          "media": null,
+                          "_uniqueIdentifier": "54147692cbfb43419a6d11e26cad44dc",
+                          "versionId": null,
+                          "translated": {
+                            "name": "L",
+                            "position": 3,
+                            "customFields": {}
+                          },
+                          "createdAt": "2022-08-09T14:43:00.165+00:00",
+                          "updatedAt": "2023-01-14T20:42:41.133+00:00",
+                          "extensions": {
+                            "foreignKeys": {
+                              "apiAlias": "array_struct"
+                            }
+                          },
+                          "id": "54147692cbfb43419a6d11e26cad44dc",
+                          "customFields": null,
+                          "apiAlias": "property_group_option"
+                        }
+                      ],
+                      "configuratorSettings": null,
+                      "categoriesRo": null,
+                      "coverId": "1c2b66d391b349c289178a192f899354",
+                      "blacklistIds": null,
+                      "whitelistIds": null,
+                      "categoryIds": ["2583f86071e748bebb13bc04da99d320"],
+                      "productReviews": null,
+                      "ratingAverage": null,
+                      "mainCategories": null,
+                      "seoUrls": null,
+                      "crossSellings": null,
+                      "canonicalProductId": null,
+                      "canonicalProduct": null,
+                      "streams": null,
+                      "_uniqueIdentifier": "176b6c013f5b4ac7a6bb13219a2fd969",
+                      "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                      "translated": {
+                        "metaDescription": null,
+                        "name": "Unisex Barista - Kaffeefilter",
+                        "keywords": null,
+                        "description": "<p style=\"text-align: center;\"><strong>barista, barista, antifascista. </strong></p><p style=\"text-align: center;\">kara kaffee x dezent</p><p style=\"text-align: left;\"><br></p><p style=\"text-align: left;\">Der wohl beste und gelungenste Mix aus Cafe und Textil.</p><p style=\"text-align: left;\"><br></p><p style=\"text-align: left;\">Mit barista, barista, antifascista vereinen wir die Liebe zum Kaffeegenuss mit hochwertigsten Textilien. Eine Kooperation, die nicht nur gut aussieht, sondern für Inklusion und ganz klar gegen Faschismus steht.</p><p style=\"text-align: left;\"><br></p><p style=\"text-align: center;\">________________________________</p><p style=\"text-align: center;\"><br></p><ul><li><strong>Materialien </strong>100% fair produzierte Bio-Baumwolle</li><li><strong>Grammatur </strong>155 g/m²</li><li><strong>Passform </strong>Regular fit</li><li><strong>Herkunftsland </strong>Indien</li></ul><p><br></p><p style=\"text-align: center;\">________________________________</p><p><br></p><ul><li><strong>Zertifizierungen</strong> Fairtrade Cotton, Fairshare, Fair Wear Foundation</li><li><strong>Fairshare-Aufschlag </strong>direkt an die Fabrikarbeiter *innen abgeführt</li></ul><p><br></p><p style=\"text-align: center;\">________________________________</p><p><br></p><p><em>Jedes Produkt ist ein Unikat, da nicht Maschinen, sondern Menschen unsere Textilien veredeln. Deshalb kann es zu leichten Unterschieden bei den Logos/Symbolen an sich und deren Positionierung kommen. </em><em>Die Produktbilder weichen daher möglicherweise leicht vom Endprodukt ab.</em></p><p><br></p>",
+                        "metaTitle": null,
+                        "packUnit": null,
+                        "packUnitPlural": null,
+                        "customFields": {}
+                      },
+                      "createdAt": "2023-01-28T17:51:24.235+00:00",
+                      "updatedAt": "2023-02-10T19:41:49.902+00:00",
+                      "extensions": {
+                        "foreignKeys": {
+                          "apiAlias": "array_struct"
+                        },
+                        "search": {
+                          "_uniqueIdentifier": null,
+                          "translated": [],
+                          "productNumber": "SW10000.3",
+                          "product_number": "SW10000.3",
+                          "autoIncrement": 77,
+                          "auto_increment": 77,
+                          "apiAlias": "array"
+                        }
+                      },
+                      "id": "176b6c013f5b4ac7a6bb13219a2fd969",
+                      "customFields": {},
+                      "apiAlias": "product"
+                    }
+                  ],
+                  "streamId": "8899998ba12e498b992b2a51ea321247",
+                  "apiAlias": "cms_product_slider"
+                },
+                "locked": false,
+                "cmsBlockVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "_uniqueIdentifier": "84f066a7d47e437088865a986c959c14",
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "translated": {
+                  "config": {
+                    "title": {
+                      "value": "Neu",
+                      "source": "static"
+                    },
+                    "border": {
+                      "value": false,
+                      "source": "static"
+                    },
+                    "rotate": {
+                      "value": false,
+                      "source": "static"
+                    },
+                    "products": {
+                      "value": "8899998ba12e498b992b2a51ea321247",
+                      "source": "product_stream"
+                    },
+                    "boxLayout": {
+                      "value": "standard",
+                      "source": "static"
+                    },
+                    "elMinWidth": {
+                      "value": "300px",
+                      "source": "static"
+                    },
+                    "navigation": {
+                      "value": true,
+                      "source": "static"
+                    },
+                    "displayMode": {
+                      "value": "standard",
+                      "source": "static"
+                    },
+                    "verticalAlign": {
+                      "value": null,
+                      "source": "static"
+                    },
+                    "productStreamLimit": {
+                      "value": 10,
+                      "source": "static"
+                    },
+                    "productStreamSorting": {
+                      "value": "name:ASC",
+                      "source": "static"
+                    }
+                  },
+                  "customFields": {}
+                },
+                "createdAt": "2023-02-17T13:46:18.566+00:00",
+                "updatedAt": "2023-02-17T13:50:43.185+00:00",
+                "extensions": {
+                  "foreignKeys": {
+                    "apiAlias": "array_struct"
+                  }
+                },
+                "customFields": null,
+                "apiAlias": "cms_slot"
+              }
+            ],
+            "sectionId": "c49459129eab4140a2484e31709ea94a",
+            "position": 1,
+            "name": null,
+            "sectionPosition": "main",
+            "marginTop": "20px",
+            "marginBottom": "20px",
+            "marginLeft": "20px",
+            "marginRight": "20px",
+            "backgroundColor": null,
+            "backgroundMediaId": null,
+            "backgroundMedia": null,
+            "backgroundMediaMode": "cover",
+            "cssClass": null,
+            "cmsSectionVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "_uniqueIdentifier": "5251a391567f4ba882bcf7d8bc9c8bbd",
+            "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "translated": [],
+            "createdAt": "2023-02-17T13:46:18.568+00:00",
+            "updatedAt": "2023-02-17T13:50:43.188+00:00",
+            "extensions": {
+              "foreignKeys": {
+                "apiAlias": "array_struct"
+              }
+            },
+            "customFields": null,
+            "apiAlias": "cms_block"
+          }
+        ],
+        "pageId": "695477e02ef643e5a016b83ed4cdf63a",
+        "page": null,
+        "position": 1,
+        "name": null,
+        "sizingMode": "boxed",
+        "mobileBehavior": "wrap",
+        "backgroundColor": null,
+        "backgroundMediaId": null,
+        "backgroundMedia": null,
+        "backgroundMediaMode": "cover",
+        "cssClass": null,
+        "cmsPageVersionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+        "_uniqueIdentifier": "c49459129eab4140a2484e31709ea94a",
+        "translated": [],
+        "createdAt": "2023-02-17T13:45:28.529+00:00",
+        "updatedAt": "2023-02-17T13:50:43.188+00:00",
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "customFields": null,
+        "apiAlias": "cms_section"
+      }
+    ],
+    "translations": null,
+    "cssClass": null,
+    "config": null,
+    "previewMediaId": null,
+    "previewMedia": null,
+    "landingPages": null,
+    "_uniqueIdentifier": "695477e02ef643e5a016b83ed4cdf63a",
+    "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+    "translated": {
+      "name": "Homepage",
+      "customFields": {}
+    },
+    "createdAt": "2022-08-09T14:42:52.595+00:00",
+    "updatedAt": "2023-02-17T13:50:43.188+00:00",
+    "extensions": {
+      "foreignKeys": {
+        "apiAlias": "array_struct"
+      }
+    },
+    "id": "695477e02ef643e5a016b83ed4cdf63a",
+    "customFields": null,
+    "apiAlias": "cms_page"
+  },
+  "linkType": null,
+  "linkNewTab": null,
+  "internalLink": null,
+  "externalLink": null,
+  "visible": true,
+  "type": "page",
+  "productAssignmentType": "product",
+  "description": null,
+  "metaTitle": null,
+  "metaDescription": null,
+  "keywords": null,
+  "seoUrls": null,
+  "_uniqueIdentifier": "7adcd0fde11e484fbec2325f91d13ef9",
+  "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+  "translated": {
+    "breadcrumb": ["Main"],
+    "name": "Main",
+    "customFields": {},
+    "linkType": null,
+    "internalLink": null,
+    "externalLink": null,
+    "linkNewTab": null,
+    "description": null,
+    "metaTitle": null,
+    "metaDescription": null,
+    "keywords": null
+  },
+  "createdAt": "2022-08-09T14:40:13.558+00:00",
+  "updatedAt": "2023-02-10T19:41:46.664+00:00",
+  "extensions": {
+    "foreignKeys": {
+      "apiAlias": "array_struct"
+    }
+  },
+  "id": "7adcd0fde11e484fbec2325f91d13ef9",
+  "customFields": null,
+  "apiAlias": "category"
+}

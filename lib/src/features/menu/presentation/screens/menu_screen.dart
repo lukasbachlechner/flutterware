@@ -16,9 +16,6 @@ class MenuScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    /*   final globalData = ref.watch(globalDataNotifierProvider).asData!.value;
-    final globalDataNotifier = ref.read(globalDataNotifierProvider.notifier); */
-
     return PageWrap(
       child: SingleChildScrollView(
         child: AsyncValueWidget(
@@ -31,79 +28,6 @@ class MenuScreen extends ConsumerWidget {
                 ...categories
                     .map((category) => CategoryBar(category: category)),
                 gapH16,
-                /* Accordion(
-                  items: [
-                    AccordionItem(
-                      title: 'Language',
-                      body: Column(
-                        children: [
-                          ...globalData.languages
-                              .map(
-                                (language) => FilterDialogOption(
-                                  title: language.name,
-                                  isSelected:
-                                      globalData.isCurrentLanguage(language),
-                                  onTap: () {
-                                    globalDataNotifier.updateContext(
-                                      ContextPatchRequest(
-                                        languageId: language.id,
-                                      ),
-                                    );
-                                  },
-                                ),
-                              )
-                              .toList(),
-                        ],
-                      ),
-                    ),
-                    AccordionItem(
-                      title: 'Currency',
-                      body: Column(
-                        children: [
-                          ...globalData.currencies
-                              .map(
-                                (currency) => FilterDialogOption(
-                                  title: currency.name,
-                                  isSelected:
-                                      globalData.isCurrentCurrency(currency),
-                                  onTap: () {
-                                    globalDataNotifier.updateContext(
-                                      ContextPatchRequest(
-                                        currencyId: currency.id,
-                                      ),
-                                    );
-                                  },
-                                ),
-                              )
-                              .toList(),
-                        ],
-                      ),
-                    ),
-                    AccordionItem(
-                      title: 'Country',
-                      body: Column(
-                        children: [
-                          ...globalData.countries
-                              .map(
-                                (country) => FilterDialogOption(
-                                  title: country.name,
-                                  isSelected:
-                                      globalData.isCurrentCountry(country),
-                                  onTap: () {
-                                    globalDataNotifier.updateContext(
-                                      ContextPatchRequest(
-                                        countryId: country.id,
-                                      ),
-                                    );
-                                  },
-                                ),
-                              )
-                              .toList(),
-                        ],
-                      ),
-                    ),
-                  ],
-                ), */
                 const DebugMenu(),
               ],
             );

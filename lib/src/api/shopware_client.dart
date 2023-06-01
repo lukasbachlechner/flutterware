@@ -12,7 +12,7 @@ ShopwareClient shopwareClient(ShopwareClientRef ref) {
       baseUrl: AppConfig.baseUrl,
       swAccessKey: AppConfig.swAccessKey,
       logging: true,
-      logRequestBody: false,
+      logRequestBody: true,
       logResponseBody: false,
       logRequestHeaders: true,
       logResponseHeaders: true,

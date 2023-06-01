@@ -1,4 +1,3 @@
-
 import 'package:shopware6_client/shopware6_client.dart';
 
 class CategoriesService {
@@ -11,19 +10,23 @@ class CategoriesService {
       return unsorted;
     }
 
-    final first = unsorted.firstWhere(
-      (element) => element.afterCategoryId == null,
-    );
+    try {
+      final first = unsorted.firstWhere(
+        (element) => element.afterCategoryId == null,
+      );
 
-    sorted.add(first);
+      sorted.add(first);
 
-    for (var i = 0; i < unsorted.length - 1; i++) {
-      sorted.add(unsorted.firstWhere(
-        (element) => element.afterCategoryId == sorted[i].id,
-      ));
+      for (var i = 0; i < unsorted.length - 1; i++) {
+        sorted.add(unsorted.firstWhere(
+          (element) => element.afterCategoryId == sorted[i].id,
+        ));
+      }
+
+      return sorted;
+    } catch (e) {
+      return unsorted;
     }
-
-    return sorted;
   }
 
   static List<Category> getRootCategories({
@@ -61,8 +64,7 @@ class CategoriesService {
           categories.firstWhere((category) => category.id == categoryId);
       return category;
     } catch (e) {
-      print(e);
+      return null;
     }
-    return null;
   }
 }

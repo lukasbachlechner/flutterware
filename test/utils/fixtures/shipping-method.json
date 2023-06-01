@@ -1,0 +1,188 @@
+{
+  "entity": "shipping_method",
+  "total": 3,
+  "aggregations": [],
+  "page": 1,
+  "limit": 100,
+  "elements": [
+    {
+      "name": "Standard",
+      "active": true,
+      "position": 1,
+      "description": null,
+      "trackingUrl": null,
+      "deliveryTimeId": "55da754b019c4e3da357e92d5dc64cf2",
+      "deliveryTime": {
+        "name": "2-5 days",
+        "min": 2,
+        "max": 5,
+        "unit": "day",
+        "_uniqueIdentifier": "55da754b019c4e3da357e92d5dc64cf2",
+        "versionId": null,
+        "translated": {
+          "name": "2-5 days",
+          "customFields": {}
+        },
+        "createdAt": "2022-08-09T14:40:13.000+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "55da754b019c4e3da357e92d5dc64cf2",
+        "customFields": null,
+        "apiAlias": "delivery_time"
+      },
+      "translations": null,
+      "availabilityRule": null,
+      "prices": [],
+      "mediaId": null,
+      "media": null,
+      "tags": null,
+      "taxType": "auto",
+      "tax": null,
+      "_uniqueIdentifier": "ef0b68d7bdac4ad5abeb5dc51f969ea8",
+      "versionId": null,
+      "translated": {
+        "name": "Standard",
+        "customFields": {},
+        "description": null,
+        "trackingUrl": null
+      },
+      "createdAt": "2022-08-09T14:40:13.536+00:00",
+      "updatedAt": "2023-04-14T16:26:22.611+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "ef0b68d7bdac4ad5abeb5dc51f969ea8",
+      "customFields": null,
+      "apiAlias": "shipping_method"
+    },
+    {
+      "name": "Click & Collect",
+      "active": true,
+      "position": 0,
+      "description": null,
+      "trackingUrl": null,
+      "deliveryTimeId": "26eb162228fc427a979327fcdfcb05fc",
+      "deliveryTime": {
+        "name": "1-3 days",
+        "min": 1,
+        "max": 3,
+        "unit": "day",
+        "_uniqueIdentifier": "26eb162228fc427a979327fcdfcb05fc",
+        "versionId": null,
+        "translated": {
+          "name": "1-3 days",
+          "customFields": {}
+        },
+        "createdAt": "2022-08-09T14:40:13.000+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "26eb162228fc427a979327fcdfcb05fc",
+        "customFields": null,
+        "apiAlias": "delivery_time"
+      },
+      "translations": null,
+      "availabilityRule": null,
+      "prices": [],
+      "mediaId": null,
+      "media": null,
+      "tags": null,
+      "taxType": "auto",
+      "tax": null,
+      "_uniqueIdentifier": "46f90cf383b74a68a2b63938c9d84ba7",
+      "versionId": null,
+      "translated": {
+        "name": "Click & Collect",
+        "customFields": {},
+        "description": null,
+        "trackingUrl": null
+      },
+      "createdAt": "2023-04-14T16:18:51.536+00:00",
+      "updatedAt": null,
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "46f90cf383b74a68a2b63938c9d84ba7",
+      "customFields": null,
+      "apiAlias": "shipping_method"
+    },
+    {
+      "name": "Express",
+      "active": true,
+      "position": 2,
+      "description": null,
+      "trackingUrl": null,
+      "deliveryTimeId": "26eb162228fc427a979327fcdfcb05fc",
+      "deliveryTime": {
+        "name": "1-3 days",
+        "min": 1,
+        "max": 3,
+        "unit": "day",
+        "_uniqueIdentifier": "26eb162228fc427a979327fcdfcb05fc",
+        "versionId": null,
+        "translated": {
+          "name": "1-3 days",
+          "customFields": {}
+        },
+        "createdAt": "2022-08-09T14:40:13.000+00:00",
+        "updatedAt": null,
+        "extensions": {
+          "foreignKeys": {
+            "apiAlias": "array_struct"
+          },
+          "internal_mapping_storage": {
+            "apiAlias": "array_struct"
+          }
+        },
+        "id": "26eb162228fc427a979327fcdfcb05fc",
+        "customFields": null,
+        "apiAlias": "delivery_time"
+      },
+      "translations": null,
+      "availabilityRule": null,
+      "prices": [],
+      "mediaId": null,
+      "media": null,
+      "tags": null,
+      "taxType": "auto",
+      "tax": null,
+      "_uniqueIdentifier": "527ec9b9fee447a3aa597a20998733ad",
+      "versionId": null,
+      "translated": {
+        "name": "Express",
+        "customFields": {},
+        "description": null,
+        "trackingUrl": null
+      },
+      "createdAt": "2022-08-09T14:40:13.546+00:00",
+      "updatedAt": "2023-04-14T16:26:30.968+00:00",
+      "extensions": {
+        "foreignKeys": {
+          "apiAlias": "array_struct"
+        }
+      },
+      "id": "527ec9b9fee447a3aa597a20998733ad",
+      "customFields": null,
+      "apiAlias": "shipping_method"
+    }
+  ],
+  "states": [],
+  "apiAlias": "dal_entity_search_result"
+}

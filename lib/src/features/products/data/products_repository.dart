@@ -110,39 +110,7 @@ Future<SingleProductPageData> getSingleProductPageDataFuture(
     );
 
     availableVariants = variantResponse.body!.elements;
-    /* final mappedVariants = {};
-
-    for (var configuratorItem in configurator) {
-      mappedVariants[configuratorItem.name] = [];
-      for (var variantProduct in variantProducts) {
-        try {
-          final matchingConfiguratorOption = configuratorItem.options
-              ?.firstWhere(
-                  (element) => element.id == variantProduct.optionIds?.first);
-          (mappedVariants[configuratorItem.name] as List).add(
-            PropertyGroupOptionWithProductId(
-              productId: variantProduct.id!,
-              propertyGroupOption: matchingConfiguratorOption!,
-              isAvailable: variantProduct.available ?? true,
-            ),
-          );
-
-          variantsWithProductId.add(
-            PropertyGroupOptionWithProductId(
-              productId: variantProduct.id!,
-              propertyGroupOption: matchingConfiguratorOption,
-              isAvailable: variantProduct.available ?? true,
-            ),
-          );
-        } catch (_) {}
-      }
-    }
-
-    print(mappedVariants); */
   }
-
-  /* variantsWithProductId.sort((a, b) => a.propertyGroupOption.position!
-      .compareTo(b.propertyGroupOption.position!)); */
 
   return SingleProductPageData(
     productResponse: productResponse,

@@ -9,7 +9,7 @@
             "request": "launch",
             "type": "dart",
             "showMemoryUsage": true,
-            "program": "lib/widgetbook.widgetbook.dart"
+            "program": "lib/widgetbook.dart"
         },
         {
             "name": "flutterware",

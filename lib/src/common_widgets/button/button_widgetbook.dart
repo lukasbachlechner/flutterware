@@ -100,3 +100,108 @@ Widget buttonPlaygroundUseCase(BuildContext context) {
   );
 }
  */
+
+import 'package:flutter/material.dart';
+import 'package:widgetbook/widgetbook.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
+
+import '../../constants/app_sizes.dart';
+import 'button.dart';
+
+@widgetbook.UseCase(
+  name: 'types',
+  type: Button,
+)
+Widget buttonTypesUseCase(BuildContext context) {
+  return Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Button(
+          onPressed: () {},
+          label: 'Learn more',
+        ),
+        gapH16,
+        Button(
+          onPressed: () {},
+          label: 'Shop now',
+          buttonType: ButtonType.primaryBlack,
+        ),
+        gapH16,
+        Button(
+          onPressed: () {},
+          label: 'Clear all',
+          buttonType: ButtonType.secondary,
+        ),
+        gapH16,
+        Button(
+          onPressed: () {},
+          label: 'Learn more',
+          buttonType: ButtonType.outlined,
+        ),
+        gapH16,
+        Button(
+          onPressed: () {},
+          label: 'Shop now',
+          buttonType: ButtonType.text,
+        ),
+      ],
+    ),
+  );
+}
+
+@widgetbook.UseCase(
+  name: 'sizes',
+  type: Button,
+)
+Widget buttonSizesUseCase(BuildContext context) {
+  return Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Button(
+          onPressed: () {},
+          label: 'Learn more',
+          buttonSize: ButtonSize.small,
+        ),
+        gapH16,
+        Button(
+          onPressed: () {},
+          label: 'Learn more',
+          buttonSize: ButtonSize.medium,
+        ),
+        gapH16,
+        Button(
+          onPressed: () {},
+          label: 'Learn more',
+          buttonSize: ButtonSize.large,
+        ),
+      ],
+    ),
+  );
+}
+
+@widgetbook.UseCase(name: 'playground', type: Button)
+Widget buttonPlaygroundUseCase(BuildContext context) {
+  final label =
+      context.knobs.string(label: 'Button label', initialValue: 'Learn more');
+  final buttonSize =
+      context.knobs.list<ButtonSize>(label: 'Button size', options: [
+    for (var size in ButtonSize.values) size,
+  ]);
+  final buttonType = context.knobs.list(label: 'Button type', options: [
+    for (var type in ButtonType.values) type,
+  ]);
+  final disabled =
+      context.knobs.boolean(label: 'Is disabled?', initialValue: false);
+
+  return Center(
+    child: Button(
+      onPressed: () {},
+      label: label,
+      buttonSize: buttonSize,
+      buttonType: buttonType,
+      disabled: disabled,
+    ),
+  );
+}

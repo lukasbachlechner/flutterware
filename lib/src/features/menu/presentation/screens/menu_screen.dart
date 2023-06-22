@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterware/src/common_widgets/page_wrap/page_wrap.dart';
 import 'package:flutterware/src/constants/app_sizes.dart';
-import 'package:flutterware/src/features/debug/widgets/debug_menu.dart';
 import 'package:flutterware/src/features/global/data/global_data_notifier.dart';
 import 'package:flutterware/src/features/menu/presentation/widgets/category_bar.dart';
 import 'package:flutterware/src/features/search/presentation/widgets/search_bar.dart';
@@ -28,7 +27,7 @@ class MenuScreen extends ConsumerWidget {
                 ...categories
                     .map((category) => CategoryBar(category: category)),
                 gapH16,
-                const DebugMenu(),
+                // const DebugMenu(),
               ],
             );
           },
